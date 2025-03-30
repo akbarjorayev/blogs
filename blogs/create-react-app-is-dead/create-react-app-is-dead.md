@@ -4,7 +4,7 @@ published="25.02.2025"
 META_DATA_END
 
 BLOG_START
-![React Logo](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/cra-is-dead/blogs/create-react-app-is-dead/react_logo.webp)
+![React Logo](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/react_logo.webp)
 
 Yes, [Create React App (CRA)](https://react.dev/blog/2025/02/14/sunsetting-create-react-app) is officially dead.  
 
@@ -18,7 +18,7 @@ CRA's performance issues — especially slow build times and outdated tooling �
 - **Inefficient builds** – Longer build times increase CI/CD costs and slow down deployment.  
 - **Poor runtime performance** – Larger bundles and outdated optimizations lead to a slower user experience.  
 
-![Which way to go?](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/cra-is-dead/blogs/create-react-app-is-dead/which_way_to_go.webp)
+![Which way to go?](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/which_way_to_go.webp)
 
 If you're looking for a replacement, here are two of the best options:  
 
