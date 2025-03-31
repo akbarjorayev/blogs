@@ -4,8 +4,6 @@ published="25.02.2025"
 META_DATA_END
 
 BLOG_START
-![React Logo](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/react_logo.webp)
-
 Yes, [Create React App (CRA)](https://react.dev/blog/2025/02/14/sunsetting-create-react-app) is officially dead.  
 
 React, developed by Facebook (now Meta), remains one of the most popular libraries for building dynamic user interfaces. For years, CRA was the go-to tool for bootstrapping React projects, with over 200K downloads per week.  
