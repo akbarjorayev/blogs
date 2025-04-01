@@ -1,30 +1,30 @@
 META_DATA_START
-title="Create React App is Dead"
-published="Feb 25, 2025"
+title="Create React App o'ldi"
+published="Fev 25, 2025"
 META_DATA_END
 
 BLOG_START
-Yes, [Create React App (CRA)](https://react.dev/blog/2025/02/14/sunsetting-create-react-app) is officially dead.  
+Ha, [Create React App (CRA)](https://react.dev/blog/2025/02/14/sunsetting-create-react-app) rasman vafot etdi.  
 
-React, developed by Facebook (now Meta), remains one of the most popular libraries for building dynamic user interfaces. For years, CRA was the go-to tool for bootstrapping React projects, with over 200K downloads per week.  
+React, Facebook (hozirgi Meta) tomonidan ishlab chiqilgan bo‘lib, dinamik foydalanuvchi interfeyslarini yaratish uchun eng mashhur kutubxonalardan biri bo‘lib qolmoqda. Yillar davomida CRA React loyihalarini tez ishga tushirish uchun asosiy vosita bo‘lib kelgan va haftasiga 200 mingdan ortiq yuklab olingan.  
 
-## Why Should We Move On from CRA?  
-CRA's performance issues — especially slow build times and outdated tooling — have made it impractical for modern development, particularly in large projects. As better alternatives emerged, its drawbacks became more apparent:  
+## Nega CRA'dan voz kechishimiz kerak?  
+CRA'ning ishlash samaradorligi — ayniqsa loyihalarni sekin qurish va eskirgan asboblari — uni zamonaviy dasturlashda qo'llab bo'lmaydigan qildi, ayniqsa katta loyihalarda. Yaxshiroq muqobillar paydo bo'lishi bilan uning kamchiliklari aniqroq bo'ldi:  
 
-- **Slow development updates** – Hot reloading and file changes take longer to reflect.  
-- **Sluggish local server startup** – Starting the dev server is noticeably slower compared to modern tools.  
-- **Inefficient builds** – Longer build times increase CI/CD costs and slow down deployment.  
-- **Poor runtime performance** – Larger bundles and outdated optimizations lead to a slower user experience.  
+- **O'zgarishlar sekin** – Loyihadagi o'zgarishlarni ko'rish uchun ko'p vaqt talab etiladi.  
+- **Local server sekin** – Local server ishga tushishi `npm start` juda sekin.  
+- **Samarasiz qurishlar** – Loyihani production ga qo'yish uchun `npm build` ko'p resurs talab qiladi va deployment narxini oshiradi.  
+- **Samarasizlik** – Katta bundle’lar va eskirgan optimallashtirishlar foydalanuvchi ishlatishini sekinlashtiradi.  
 
-![Which way to go?](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/which_way_to_go.webp)
+![Qaysi yo'ldan borish kerak?](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/which_way_to_go.webp)
 
-If you're looking for a replacement, here are two of the best options:  
+Agar o'rnini bosuvchi texnologiya izlayotgan bo'lsangiz, mana, ikkita eng yaxshi tanlov:  
 
 ### 1. [Vite](https://vite.dev/)  
-Vite is a high-performance frontend build tool that dramatically improves speed over CRA. It provides instant Hot Module Replacement (HMR), modern ES module support, and near-zero startup time. However, it’s purely a frontend tool and does not include server-side rendering or API handling.  
+Vite — bu yuqori samarali frontend qurilish vositasi bo'lib, CRA'ga nisbatan sezilarli darajada tez. U darhol Hot Module Replacement (HMR), zamonaviy ES modulini qo'llab-quvvatlaydi va deyarli 0ms da ishga tushadi. Biroq, u faqat frontend uchun mo'ljallangan, server komponentlarni rander qila olmaydi va API bilan ham ishlay olmaydi. 
 
 ### 2. [Next.js](https://nextjs.org/)  
-Next.js is the preferred choice for full-stack React applications. It offers server-side rendering (SSR), static site generation (SSG), API routes, and middleware, making it ideal for performance-focused and scalable applications.  
+Next.js to'liq stack React ilovalari uchun eng yaxshi tanlovdir. U server komponentlarni render qilish (SSR), statik sayt generatsiyasi (SSG), API yo'llari va middleware larni taqdim etadi va buni siz full-stack va katta loyihalarda bemalol ishlata olasiz.
 
-As the React ecosystem evolves, modern tools like Vite and Next.js provide a far superior developer experience compared to CRA. If you're still using CRA, now is the time to migrate.
+React ekotizimi rivojlanishi bilan, Vite va Next.js kabi zamonaviy vositalar CRA'ga qaraganda ancha yaxshi tezlikni taminlab bermoqda. Agar siz hali ham CRA'dan foydalanayotgan bo'lsangiz, endi u bilan xayrlashish payti keldi.
 BLOG_END
