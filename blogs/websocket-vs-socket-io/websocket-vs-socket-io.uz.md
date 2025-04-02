@@ -1,37 +1,37 @@
 META_DATA_START
-title="WebSocket vs Socket.IO"
+title="WebSocket yoki Socket.IO"
 published="Mar 30, 2025"
 META_DATA_END
 
 BLOG_START
-Why do we need them? Both technologies connect the client and server and provide real-time communication. For example, they are essential for chat apps, multiplayer games, and other scenarios where real-time interaction between the client and server is crucial.
+O'zi bizga ular nega kerak? Ikkala texnologiyalar ham mijoz bilan server ni bog'laydi va ular o'rtasidagi real vaqt muloqotni ta'minlab beradi. Misol uchun, ularni biz chat ilovalarida, guruhlik o'yinlarda, va mijoz va server orasidagi real vaqt muloqot kerak bolgan boshqa ko'plab ilovalarda ishlatishimiz mumkin.
 
-We can achieve "real-time" communication by repeatedly sending HTTP requests at short intervals, but this approach is costly and inefficient for large applications.
+Biz "real vaqt" muloqotiga qisqa vaqtlarda HTTP so'rovini yuborish orqali erishishimiz mumkin, lekin bu usul bizga qimmatga tushadi va katta ilovalar uchun samarasizdi.
 
 ## WebSocket
-WebSocket is an application-layer protocol over TCP that enables bidirectional communication between a client and a server. It establishes a connection through a single **HTTP Upgrade** request from the client, and the server responds with a status code. If the status code is `101`, the connection is established; otherwise, the connection fails. Once established, WebSocket uses a TCP/IP connection to maintain communication.
+WebSocket — bu TCP ustida ishlovchi ilova darajasidagi protokol bo‘lib, mijoz va server o‘rtasida ikki tomonlama aloqa o‘rnatishga imkon beradi. U mijoz tomonidan yuborilgan **HTTP Upgrade** so‘rovi orqali bog‘lanishni o‘rnatadi va server javob sifatida holat kodini qaytaradi. Agar holat kodi `101` bo‘lsa, bog‘lanish muvaffaqiyatli o‘rnatiladi; aks holda, bog‘lanish muvaffaqiyatsiz tugaydi. Bog‘lanish o‘rnatilgach, WebSocket aloqa uchun TCP/IP ulanishidan foydalanadi.
 
 ![WebSocket logo](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/websocket-logo.webp)
 
 ## Socket.IO
-Socket.IO is a JavaScript library that uses WebSocket when available to establish a real-time connection. If WebSocket is unavailable, it falls back to long polling. It has the same functionality as WebSocket but includes additional built-in features, making it more advantageous in certain cases.
+Socket.IO — bu JavaScript kutubxonasi bo'lib, real vaqt rejimidagi aloqa o'rnatish uchun WebSocket'dan foydalanadi. Agar WebSocket mavjud bo'lmasa, u uzun so'rov (long polling) usuliga o'tadi. U WebSocket bilan bir xil funksionallikka ega, lekin qo'shimcha o'rnatilgan xususiyatlarni o'z ichiga olganligi sababli ayrim hollarda yanada qulayroq hisoblanadi.
 
 ![Socket.IO logo](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/socket-io-logo.webp)
 
-## Which is which?
-The actual purpose of both technologies is the same - they enable real-time communication between the client and server. **Then which is which?**
+## Qaysinisi qanaqa?
+Har ikkala texnologiyaning asl maqsadi bir xil — ular mijoz va server o'rtasida real vaqt rejimidagi aloqani ta'minlaydi. **Xo'sh, farqi nimada?**
 
-### Connection
-Both send periodic heartbeats. The server sends "ping" to the client (or vice versa), and if "pong" is not received, the connection is considered dead. When the connection is lost between the client and server due to a network issue or other reasons and there is no pong for the ping, Socket.IO automatically tries to reconnect the communication. With WebSocket, we must handle reconnections manually.
+### Ulanish
+Har ikkisi ham vaqti-vaqti bilan yurak urishi (heartbeat) signallarini yuboradi. Server mijozga (yoki aksincha) "ping" jo'natadi, agar "pong" javobi olinmasa, ulanish uzilgan deb hisoblanadi. Agar tarmoq muammosi yoki boshqa sabablarga ko'ra mijoz va server o'rtasidagi aloqa uzilib, ping uchun pong kelmasa, Socket.IO avtomatik ravishda qayta ulanib olishga harakat qiladi. WebSocket'da esa qayta ulanish jarayonini qo'lda boshqarish talab etiladi.
 
 ### Fallbacks
-WebSocket is a protocol that operates over TCP, while Socket.IO has something called fallback mechanism which ensures that Socket.IO uses WebSocket when available and automatically switches to long polling when it is not. Long polling occurs when the client makes a request, and once it receives a response, it immediately sends another request to keep the connection alive.
+WebSocket — bu TCP ustida ishlovchi protokol bo'lib, Socket.IO esa fallback mexanizmi deb ataladigan xususiyatga ega. Bu mexanizm Socket.IO'ni WebSocket mavjud bo'lsa, undan foydalanishga va u mavjud bo'lmasa, avtomatik ravishda uzun so'rov (long polling) usuliga o'tishga imkon beradi. Uzun so'rov (long polling) mijoz so'rov yuborganida boshlanadi va javobni olgach, darhol yana bir so'rov yuborib, ulanishni tirik saqlaydi.
 
 ### Broadcasting
-It is another built-in method in Socket.IO. In Socket.IO, we can send messages to as many clients as we want or send them to a specific room. A room is like a group chat. Meanwhile, WebSocket requires manual implementation.
+Bu Socket.IO'da yana bir o'rnatilgan usuldir. Socket.IO'da biz xohlagancha mijozlarga xabar yuborishimiz yoki ularni maxsus xona (room) ga yuborishimiz mumkin. Xona — bu guruh chatiga o'xshaydi. Agar WebSocket'da esa, bunday xususiyatni qo'lda amalga oshirish kerak bo'ladi.
 
-### Event-based communication
-WebSocket is a raw bidirectional connection that allows message exchange. Meanwhile, in Socket.IO, we can create custom events to handle messages, chat joining/leaving, and more.
+### Voqealarga asoslangan aloqa
+WebSocket — bu xabar almashish uchun ikkala tomonlama to'g'ridan-to'g'ri ulanishni ta'minlaydigan xom (raw) ulanishdir. Socket.IO'da esa biz xabarlar, chatga qo'shilish/chiqish va boshqa narsalarni boshqarish uchun maxsus voqealarni (events) yaratishimiz mumkin.
 
 Server (Node.js)
 ```
@@ -43,7 +43,7 @@ io.on('connection', (socket) => {
 });
 ```
 
-Client (Browser)
+Fordalanuvchi (Brauzer)
 ```
 const socket = io('http://localhost:3000');
 
@@ -51,13 +51,15 @@ socket.emit('custom_event', 'Hello from client!');
 socket.on('response_event', (data) => console.log(data));
 ```
 
-### Performance
-Because WebSocket is an application-layer protocol connection, it has lower latency than Socket.IO, which includes built-in methods like event-based communication. When Socket.IO sends a message, it adds additional metadata (e.g., event and data itself).
+### Ishlash tezligi
+WebSocket ilova darajasidagi protokol ulanishi bo'lgani uchun, u Socket.IO'dan pastroq kechikish (latency) ga ega. Socket.IO esa voqeaga asoslangan aloqa kabi o'rnatilgan usullarni o'z ichiga oladi. Socket.IO xabar yuborganda, qo'shimcha metama'lumotlarni (masalan, voqea va ma'lumot o'zi) qo'shadi.
+
 ```
 { "event": "custom_event", "data": "Hello" }
 ```
 
-## When to which?
-1. Choose **Socket.IO** if you want to simplify development with more built-in methods while sacrificing a small fraction of time waiting for clients (e.g., chat apps, collaborative tools).
-2. Choose **WebSocket** if you want complete freedom over development, to build everything from scratch, and need high performance with low latency (e.g., trading platforms, gaming servers).
+## Qachon qaysinisi?
+1. **Socket.IO**'ni tanlang agar ko'proq o'rnatilgan usullar bilan rivojlantirishni soddalashtirishni xohlasangiz va mijozlar kutishda kichik vaqt sarflashni qabul qilsangiz (masalan, chat ilovalari, hamkorlik vositalari).
+
+2. **WebSocket**'ni tanlang agar rivojlantirishda to'liq erkinlikka ega bo'lishni, hamma narsani boshidan qurishni va yuqori samaradorlik hamda past kechikish (latency) talab qiladigan tizimlar (masalan, savdo platformalari, o'yin serverlari) qurishni istasangiz.
 BLOG_END
