@@ -4,12 +4,12 @@ published="Mar 30, 2025"
 META_DATA_END
 
 BLOG_START
-O'zi bizga ular nega kerak? Ikkala texnologiyalar ham mijoz bilan server ni bog'laydi va ular o'rtasidagi real vaqt muloqotni ta'minlab beradi. Misol uchun, ularni biz chat ilovalarida, guruhlik o'yinlarda, va mijoz va server orasidagi real vaqt muloqot kerak bolgan boshqa ko'plab ilovalarda ishlatishimiz mumkin.
+O'zi bizga ular nega kerak? Ikkala texnologiyalar ham mijoz bilan server'ni bog'laydi va ular o'rtasidagi real vaqt muloqotni ta'minlab beradi. Misol uchun, ularni biz chat ilovalarida, guruhlik o'yinlarda va mijoz bilan server orasidagi real vaqt muloqot kerak bolgan boshqa ko'plab ilovalarda ishlatishimiz mumkin.
 
-Biz "real vaqt" muloqotiga qisqa vaqtlarda HTTP so'rovini yuborish orqali erishishimiz mumkin, lekin bu usul bizga qimmatga tushadi va katta ilovalar uchun samarasizdi.
+Biz "real vaqt" muloqotiga qisqa vaqtlarda HTTP so'rovini yuborish orqali erishishimiz mumkin, lekin bu usul bizga qimmatga tushadi va katta ilovalar uchun samarasizdir.
 
 ## WebSocket
-WebSocket — bu TCP ustida ishlovchi ilova darajasidagi protokol bo‘lib, mijoz va server o‘rtasida ikki tomonlama aloqa o‘rnatishga imkon beradi. U mijoz tomonidan yuborilgan **HTTP Upgrade** so‘rovi orqali bog‘lanishni o‘rnatadi va server javob sifatida holat kodini qaytaradi. Agar holat kodi `101` bo‘lsa, bog‘lanish muvaffaqiyatli o‘rnatiladi; aks holda, bog‘lanish muvaffaqiyatsiz tugaydi. Bog‘lanish o‘rnatilgach, WebSocket aloqa uchun TCP/IP ulanishidan foydalanadi.
+WebSocket — bu TCP ustida ishlovchi ilova darajasidagi protokol bo'lib, mijoz va server o'rtasida ikki tomonlama aloqa o'rnatishga imkon beradi. U mijoz tomonidan yuborilgan **HTTP Upgrade** so'rovi orqali bog'lanishni o'rnatadi va server javob sifatida holat kodini qaytaradi. Agar holat kodi `101` bo'lsa, bog'lanish muvaffaqiyatli o'rnatiladi; aks holda, bog'lanish muvaffaqiyatsiz tugaydi. Bog'lanish o'rnatilgach, WebSocket aloqa uchun TCP/IP ulanishidan foydalanadi.
 
 ![WebSocket logo](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/photos/websocket-logo.webp)
 
@@ -18,7 +18,7 @@ Socket.IO — bu JavaScript kutubxonasi bo'lib, real vaqt rejimidagi aloqa o'rna
 
 ![Socket.IO logo](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/photos/socket-io-logo.webp)
 
-## Qaysinisi qanaqa?
+## Qaysi biri qanaqa?
 Har ikkala texnologiyaning asl maqsadi bir xil — ular mijoz va server o'rtasida real vaqt rejimidagi aloqani ta'minlaydi. **Xo'sh, farqi nimada?**
 
 ### Ulanish
@@ -52,7 +52,7 @@ socket.on('response_event', (data) => console.log(data));
 ```
 
 ### Ishlash tezligi
-WebSocket ilova darajasidagi protokol ulanishi bo'lgani uchun, u Socket.IO'dan pastroq kechikish (latency) ga ega. Socket.IO esa voqeaga asoslangan aloqa kabi o'rnatilgan usullarni o'z ichiga oladi. Socket.IO xabar yuborganda, qo'shimcha metama'lumotlarni (masalan, voqea va ma'lumot o'zi) qo'shadi.
+WebSocket ilova darajasidagi protokol ulanishi bo'lgani uchun, u Socket.IO'dan pastroq kechikish (latency)ga ega. Socket.IO esa voqeaga asoslangan aloqa kabi o'rnatilgan usullarni o'z ichiga oladi. Socket.IO xabar yuborganda, qo'shimcha metama'lumotlarni (masalan, voqea va ma'lumot o'zi) qo'shadi.
 
 ```
 { "event": "custom_event", "data": "Hello" }
