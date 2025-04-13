@@ -11,12 +11,12 @@ We can achieve "real-time" communication by repeatedly sending HTTP requests at 
 ## WebSocket
 WebSocket is an application-layer protocol over TCP that enables bidirectional communication between a client and a server. It establishes a connection through a single **HTTP Upgrade** request from the client, and the server responds with a status code. If the status code is `101`, the connection is established; otherwise, the connection fails. Once established, WebSocket uses a TCP/IP connection to maintain communication.
 
-![WebSocket logo](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/photos/websocket-logo.webp)
+![WebSocket logo](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/photos/websocket-logo.webp)(500x180)
 
 ## Socket.IO
 Socket.IO is a JavaScript library that uses WebSocket when available to establish a real-time connection. If WebSocket is unavailable, it falls back to long polling. It has the same functionality as WebSocket but includes additional built-in features, making it more advantageous in certain cases.
 
-![Socket.IO logo](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/photos/socket-io-logo.webp)
+![Socket.IO logo](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/photos/socket-io-logo.webp)(500x180)
 
 ## Which is which?
 The actual purpose of both technologies is the same - they enable real-time communication between the client and server. **Then which is which?**
