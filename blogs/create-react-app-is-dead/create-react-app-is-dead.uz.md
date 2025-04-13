@@ -16,7 +16,7 @@ CRA'ning ishlash samaradorligi — ayniqsa loyihalarni sekin qurish va eskirgan 
 - **Samarasiz qurishlar** – Loyihani production ga qo'yish uchun `npm build` ko'p resurs talab qiladi va deployment narxini oshiradi; 
 - **Samarasizlik** – Katta bundle’lar va eskirgan optimallashtirishlar foydalanuvchi ishlatishini sekinlashtiradi.  
 
-![Qaysi yo'ldan borish kerak?](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/photos/which_way_to_go.webp)
+![Qaysi yo'ldan borish kerak?](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/photos/which_way_to_go.webp)(500x750)
 
 Agar o'rnini bosuvchi texnologiya izlayotgan bo'lsangiz, mana, ikkita eng yaxshi tanlov:  
 
