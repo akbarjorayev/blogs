@@ -43,7 +43,4 @@ const isValid = hashPassword(inputPassword, salt) === hashedPassword;
 
 console.log(isValid);
 ```
-
-### SHA-256
-### Argon2
 BLOG_END
