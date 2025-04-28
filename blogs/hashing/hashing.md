@@ -13,7 +13,7 @@ You should never store a password in a database as plaintext. If hackers gain ac
 
 Imagine generating a hashed password as a one-way process. We can generate the hashed password, but we cannot reverse it; we cannot get the original plaintext from the hashed version. So how do we check whether the given plaintext is correct if we cannot reverse the hashed password? Simple: we generate the hashed password from the given plaintext and then compare it with the stored one.
 
-Tips:
+Tip:
 > Use special characters and more than 8 characters. Different services, different passwords. Skip personal info. Just use a strong, suggested password 😉
 
 ### Strong passwords matter & Salting
