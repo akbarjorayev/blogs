@@ -1,6 +1,6 @@
 META_DATA_START
 title="Hashing"
-published="Apr 25, 2025"
+published="coming soon"
 META_DATA_END
 
 BLOG_START
