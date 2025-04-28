@@ -6,7 +6,7 @@ META_DATA_END
 BLOG_START
 Hashing — generating a hashed string from a given key or string so that it cannot be reversed back to its original form. The function that does this is called a *hash function*.
 
-![Plaintext to hash](https://raw.githubusercontent.com/akbarjorayev/blogs/hashing/blogs/hashing/photos/plaintext_to_hash.webp)(500x333)
+![Plaintext to hash](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/photos/plaintext_to_hash.webp)(500x333)
 
 ### Why is hashing important?
 You should never store a password in a database as plaintext. If hackers gain access to our database, they could steal our users' passwords. Instead, store the **hashed password**.
