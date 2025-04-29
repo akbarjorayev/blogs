@@ -21,7 +21,7 @@ For example, take the hashing algorithm `SHA-256`. No matter how many times you 
 
 If we `salt` our plaintext, we can avoid such an attack. If a user enters a simple password, such as `12345678`, and we add a random salt like `s@1TValUe` to generate our virtual password and then hash it, we can avoid a rainbow table attack. We store both the hashed password and the salt. To check the password, we add the stored salt to the entered plaintext, hash it, and check the hashed value against our stored hash.
 
-> plaintext + salt = virtual password
+> plaintext + salt = salted password
 
 ![Salting a password](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/photos/password_salting.webp?w=500&h=500)
 
