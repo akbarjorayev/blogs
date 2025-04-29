@@ -39,7 +39,7 @@ const { Server } = require('socket.io');
 const io = new Server(3000);
 
 io.on('connection', (socket) => {
-    socket.on('custom_event', (data) => socket.emit('response_event', 'Hello from server!'));
+    socket.on('custom_event', (data) => socket.emit('response_event', 'Serverdan salom!'));
 });
 ```
 
@@ -47,7 +47,7 @@ Fordalanuvchi (Brauzer)
 ```
 const socket = io('http://localhost:3000');
 
-socket.emit('custom_event', 'Hello from client!');
+socket.emit('custom_event', 'Foydalanuvchidan salom!');
 socket.on('response_event', (data) => console.log(data));
 ```
 
@@ -55,7 +55,7 @@ socket.on('response_event', (data) => console.log(data));
 WebSocket ilova darajasidagi protokol ulanishi bo'lgani uchun, u Socket.IO'dan pastroq kechikish (latency)ga ega. Socket.IO esa voqeaga asoslangan aloqa kabi o'rnatilgan usullarni o'z ichiga oladi. Socket.IO xabar yuborganda, qo'shimcha metama'lumotlarni (masalan, voqea va ma'lumot o'zi) qo'shadi.
 
 ```
-{ "event": "custom_event", "data": "Hello" }
+{ "event": "custom_event", "data": "Salom" }
 ```
 
 ## Qachon qaysinisi?
