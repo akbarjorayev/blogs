@@ -48,4 +48,15 @@ const isValid = verifyPassword(inputPassword, salt, hashedPassword);
 
 console.log(isValid);
 ```
+
+### Hash qilish ≠ Shifrlash
+Shifrlash - kalit yordamida ma'lumotlarni himoya qilish, uni o'qib bo'lmaydigan matnga aylantirishdir, buni esa faqat shu kalit yordamida asl ko'rinishga keltirish mumkin.
+
+Siz foydalanuvchining ID'sini cookie'da saqlamoqchisiz. Agar siz uni son ko'rinishida (masalan, 1, 2, 3...) saqlasangiz, foydalanuvchi uni o'zgartirib boshqa foydalanuvchi sifatida server'ga so'rovlar yuborishi mumkin. Lekin, siz foydalanuvchi ID'sini shifrlanganini saqlasangiz, uni faqatgina siz asl holiga keltirib o'qiy olasiz. **Bu kalitni hech kimga bermang**.
+| Xususiyat            | Hash qilish                        | Shifrlash                               |
+|----------------------|------------------------------------|-----------------------------------------|
+| Maqsad               | Ma'lumotlar xavfsizligi            | Ma'lumotlarning maxfiyligi              |
+| Qaytaruvchanlik      | **Bir tomonga** (qaytarilmas)      | **Ikki tomonga** (qaytariladigan)       |
+| Output               | Aniq uzinlik                       | O'zgaruvchan uzunlik (ma'lumot asosida) |
+| Kalit ishlatilinishi | Kalit kerak emas                   | Kalit kerak                             |
 BLOG_END
