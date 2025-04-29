@@ -23,11 +23,18 @@ Agar biz parolimizni `tuzlasak`, biz bu hujumdan qutilishimiz mumkin. Agar foyda
 
 > parol + tuz = xayoliy parol
 
+![Parolni tuzlash](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/photos/password_salting.webp)(500x500)
+
+Tuzlash bunday amalga oshirilinadi:
 ```
 const crypto = require('crypto');
 
 function hashPassword(password, salt) {
   return crypto.createHmac('sha256', salt).update(password).digest('hex');
+}
+
+function verifyPassword(inputPassword, salt, storedHash) {
+  return hashPassword(inputPassword, salt) === storedHash;
 }
 
 function getSalt() {
@@ -39,8 +46,19 @@ const salt = getSalt();
 const hashedPassword = hashPassword(simplePassword, salt);
 
 const inputPassword = '12345678';
-const isValid = hashPassword(inputPassword, salt) === hashedPassword;
+const isValid = verifyPassword(inputPassword, salt, hashedPassword);
 
 console.log(isValid);
 ```
+
+### Hash qilish ≠ Shifrlash
+Shifrlash - kalit yordamida ma'lumotlarni himoya qilish, uni o'qib bo'lmaydigan matnga aylantirishdir, buni esa faqat shu kalit yordamida asl ko'rinishga keltirish mumkin.
+
+Siz foydalanuvchining ID'sini cookie'da saqlamoqchisiz. Agar siz uni son ko'rinishida (masalan, 1, 2, 3...) saqlasangiz, foydalanuvchi uni o'zgartirib boshqa foydalanuvchi sifatida server'ga so'rovlar yuborishi mumkin. Lekin, siz foydalanuvchi ID'sini shifrlanganini saqlasangiz, uni faqatgina siz asl holiga keltirib o'qiy olasiz. **Bu kalitni hech kimga bermang**.
+| Xususiyat            | Hash qilish                        | Shifrlash                               |
+|----------------------|------------------------------------|-----------------------------------------|
+| Maqsad               | Ma'lumotlar xavfsizligi            | Ma'lumotlarning maxfiyligi              |
+| Qaytaruvchanlik      | **Bir tomonga** (qaytarilmas)      | **Ikki tomonga** (qaytariladigan)       |
+| Output               | Aniq uzinlik                       | O'zgaruvchan uzunlik (ma'lumot asosida) |
+| Kalit ishlatilinishi | Kalit kerak emas                   | Kalit kerak                             |
 BLOG_END

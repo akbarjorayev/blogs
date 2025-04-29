@@ -23,11 +23,18 @@ If we `salt` our plaintext, we can avoid such an attack. If a user enters a simp
 
 > plaintext + salt = virtual password
 
+![Salting a password](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/photos/password_salting.webp)(500x500)
+
+Here's how you'd implement salting:
 ```
 const crypto = require('crypto');
 
 function hashPassword(password, salt) {
   return crypto.createHmac('sha256', salt).update(password).digest('hex');
+}
+
+function verifyPassword(inputPassword, salt, storedHash) {
+  return hashPassword(inputPassword, salt) === storedHash;
 }
 
 function getSalt() {
@@ -39,8 +46,19 @@ const salt = getSalt();
 const hashedPassword = hashPassword(simplePassword, salt);
 
 const inputPassword = '12345678';
-const isValid = hashPassword(inputPassword, salt) === hashedPassword;
+const isValid = verifyPassword(inputPassword, salt, hashedPassword);
 
 console.log(isValid);
 ```
+
+### Hashing ≠ Encryption
+Encryption — securing data using a key, transforming it into unreadable text that can only be reversed (decrypted) with that key.
+
+Imagine a scenario where you need to store a user ID in cookies. If you store it as a simple number (e.g., 1, 2, 3...), users can easily modify it and send requests to server as another user. This method is insecure. However, if you encrypt the ID and store the encrypted version, only you can decrypt it and retrieve the actual user ID. **Don't share this key**.
+| Feature            | Hashing                          | Encryption                         |
+|--------------------|----------------------------------|------------------------------------|
+| Purpose            | Data integrity                   | Data confidentiality               |
+| Reversibility      | **One-way** (irreversible)       | **Two-way** (reversible)           |
+| Output             | Fixed length                     | Variable length (based on input)   |
+| Key usage          | No key needed                    | Requires key                       |
 BLOG_END
