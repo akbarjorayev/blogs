@@ -23,11 +23,16 @@ If we `salt` our plaintext, we can avoid such an attack. If a user enters a simp
 
 > plaintext + salt = virtual password
 
+Here's how you'd implement salting:
 ```
 const crypto = require('crypto');
 
 function hashPassword(password, salt) {
   return crypto.createHmac('sha256', salt).update(password).digest('hex');
+}
+
+function verifyPassword(inputPassword, salt, storedHash) {
+  return hashPassword(inputPassword, salt) === storedHash;
 }
 
 function getSalt() {
@@ -39,7 +44,7 @@ const salt = getSalt();
 const hashedPassword = hashPassword(simplePassword, salt);
 
 const inputPassword = '12345678';
-const isValid = hashPassword(inputPassword, salt) === hashedPassword;
+const isValid = verifyPassword(inputPassword, salt, hashedPassword);
 
 console.log(isValid);
 ```
