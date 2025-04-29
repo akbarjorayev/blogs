@@ -23,6 +23,8 @@ If we `salt` our plaintext, we can avoid such an attack. If a user enters a simp
 
 > plaintext + salt = virtual password
 
+![Salting a password](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/photos/password_salting.webp)(500x500)
+
 Here's how you'd implement salting:
 ```
 const crypto = require('crypto');
