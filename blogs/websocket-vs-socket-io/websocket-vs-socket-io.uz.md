@@ -11,12 +11,12 @@ Biz "real vaqt" muloqotiga qisqa vaqtlarda HTTP so'rovini yuborish orqali erishi
 ## WebSocket
 WebSocket — bu TCP ustida ishlovchi ilova darajasidagi protokol bo'lib, mijoz va server o'rtasida ikki tomonlama aloqa o'rnatishga imkon beradi. U mijoz tomonidan yuborilgan **HTTP Upgrade** so'rovi orqali bog'lanishni o'rnatadi va server javob sifatida holat kodini qaytaradi. Agar holat kodi `101` bo'lsa, bog'lanish muvaffaqiyatli o'rnatiladi; aks holda, bog'lanish muvaffaqiyatsiz tugaydi. Bog'lanish o'rnatilgach, WebSocket aloqa uchun TCP/IP ulanishidan foydalanadi.
 
-![WebSocket logo](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/photos/websocket-logo.webp)(500x180)
+![WebSocket logo](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/photos/websocket-logo.webp?w=500&h=180)
 
 ## Socket.IO
 Socket.IO — bu JavaScript kutubxonasi bo'lib, real vaqt rejimidagi aloqa o'rnatish uchun WebSocket'dan foydalanadi. Agar WebSocket mavjud bo'lmasa, u uzun so'rov (long polling) usuliga o'tadi. U WebSocket bilan bir xil funksionallikka ega, lekin qo'shimcha o'rnatilgan xususiyatlarni o'z ichiga olganligi sababli ayrim hollarda yanada qulayroq hisoblanadi.
 
-![Socket.IO logo](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/photos/socket-io-logo.webp)(500x180)
+![Socket.IO logo](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/photos/socket-io-logo.webp?w=500&h=180)
 
 ## Qaysi biri qanaqa?
 Har ikkala texnologiyaning asl maqsadi bir xil — ular mijoz va server o'rtasida real vaqt rejimidagi aloqani ta'minlaydi. **Xo'sh, farqi nimada?**
