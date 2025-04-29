@@ -21,7 +21,7 @@ Masalan, “SHA-256” xesh algoritmini olaylik. `"Salom"` qatorini necha marta 
 
 Agar biz parolimizni `tuzlasak`, biz bu hujumdan qutilishimiz mumkin. Agar foydalanuvchi oddiy parol ishlatsa, misol uchun `12345678`, va biz undan xayoliy parol yaratish uchun unga `s@1TValUe` kabi tuz qo'shsak, biz kamalak jadval hujumidan qutilamiz. Biz hashlangan parol bilan tuzni ikkalasini ham ma'lumotlar bazasida saqlaymiz. Parolni tekshirish uchun esa, biz kiritilingan parolga bazadagi tuzni qoshib hashlaymiz va bazadagi hashlangan parol bilan solishtiramiz.
 
-> parol + tuz = xayoliy parol
+> parol + tuz = tuzlangan parol
 
 ![Parolni tuzlash](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/photos/password_salting.webp?w=500&h=500)
 
