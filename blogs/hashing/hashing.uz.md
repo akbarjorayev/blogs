@@ -23,11 +23,16 @@ Agar biz parolimizni `tuzlasak`, biz bu hujumdan qutilishimiz mumkin. Agar foyda
 
 > parol + tuz = xayoliy parol
 
+Tuzlash bunday amalga oshirilinadi:
 ```
 const crypto = require('crypto');
 
 function hashPassword(password, salt) {
   return crypto.createHmac('sha256', salt).update(password).digest('hex');
+}
+
+function verifyPassword(inputPassword, salt, storedHash) {
+  return hashPassword(inputPassword, salt) === storedHash;
 }
 
 function getSalt() {
@@ -39,7 +44,7 @@ const salt = getSalt();
 const hashedPassword = hashPassword(simplePassword, salt);
 
 const inputPassword = '12345678';
-const isValid = hashPassword(inputPassword, salt) === hashedPassword;
+const isValid = verifyPassword(inputPassword, salt, hashedPassword);
 
 console.log(isValid);
 ```
