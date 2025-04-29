@@ -48,4 +48,15 @@ const isValid = verifyPassword(inputPassword, salt, hashedPassword);
 
 console.log(isValid);
 ```
+
+### Hashing ≠ Encryption
+Encryption — securing data using a key, transforming it into unreadable text that can only be reversed (decrypted) with that key.
+
+Imagine a scenario where you need to store a user ID in cookies. If you store it as a simple number (e.g., 1, 2, 3...), users can easily modify it to impersonate another user. This method is insecure. However, if you encrypt the ID and store the encrypted version, only you can decrypt it and retrieve the actual user ID.
+| Feature            | Hashing                         | Encryption                        |
+|--------------------|----------------------------------|-----------------------------------|
+| Purpose            | Data integrity                   | Data confidentiality              |
+| Reversibility      | **One-way** (irreversible)       | **Two-way** (reversible)          |
+| Output             | Fixed length                    | Variable length (based on input)  |
+| Key usage          | No key needed                   | Requires key (symmetric or asymmetric) |
 BLOG_END
