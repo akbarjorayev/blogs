@@ -23,6 +23,8 @@ Agar biz parolimizni `tuzlasak`, biz bu hujumdan qutilishimiz mumkin. Agar foyda
 
 > parol + tuz = xayoliy parol
 
+![Parolni tuzlash](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/photos/password_salting.webp)(500x500)
+
 Tuzlash bunday amalga oshirilinadi:
 ```
 const crypto = require('crypto');
