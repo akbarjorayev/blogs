@@ -6,7 +6,7 @@ META_DATA_END
 BLOG_START
 Hashing — berilgan kalit yoki satrni ortga qaytarib bo'lmaydigan shaklda xashlangan satrga aylantirish jarayoni. Buni amalga oshiradigan funksiya *xash funksiyasi* deb ataladi.
 
-![Oddiy matnni hashga o'girish](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/photos/plaintext_to_hash.webp)(500x333)
+![Oddiy matnni hashga o'girish](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/photos/plaintext_to_hash.webp?w=500&h=333)
 
 ### Hash qilish nega ahamiyatli?
 Parolni hech qachon ma'lumotlar bazasida oddiy matn (plaintext) sifatida saqlamang. Agar xakerlar ma'lumotlar bazamizga kirsa, foydalanuvchilarning parollarini o'g'irlashlari mumkin. Buning o'rniga, **xashlangan parolni** saqlang.
@@ -23,7 +23,7 @@ Agar biz parolimizni `tuzlasak`, biz bu hujumdan qutilishimiz mumkin. Agar foyda
 
 > parol + tuz = xayoliy parol
 
-![Parolni tuzlash](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/photos/password_salting.webp)(500x500)
+![Parolni tuzlash](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/photos/password_salting.webp?w=500&h=500)
 
 Tuzlash bunday amalga oshirilinadi:
 ```
