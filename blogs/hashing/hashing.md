@@ -26,7 +26,7 @@ If we salt our plaintext, we can avoid such an attack. If a user enters a simple
 ![Salting a password](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/photos/password_salting.webp?w=500&h=500)
 
 Here's how you'd implement salting:
-```
+```javascript
 const crypto = require('crypto');
 
 function hashPassword(password, salt) {
@@ -64,14 +64,14 @@ Imagine a scenario where you need to store a user ID in cookies. If you store it
 
 ### Timing attacks
 To understand timing attacks, we first need to know how == or === comparisons work under the hood. Let’s say we have:
-```
+```javascript
 const user_input = "hello";
 const actual_password = "he1lo";
 ```
 The comparison goes character by character: 'h' == 'h', 'e' == 'e', 'l' == '1' — boom, mismatch. It exits immediately. This "early exit" can leak information that part of the password is correct. Over multiple attempts, hackers could reconstruct the actual password.
 
 To avoid this problem, we should ensure that every attempt takes roughly the same amount of time.
-```
+```javascript
 function constantTimeCompare(a, b) {
   if (a.length !== b.length) return false;
 
