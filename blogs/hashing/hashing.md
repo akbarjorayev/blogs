@@ -82,4 +82,6 @@ function constantTimeCompare(a, b) {
   return result === 0;
 }
 ```
+
+This is all I have so far. Don't forget to protect against brute force attacks with **rate limits**.
 BLOG_END
