@@ -82,4 +82,6 @@ function constantTimeCompare(a, b) {
   return result === 0;
 }
 ```
+
+Hozircha menda shular. **Rate limits** bilan brute force hujumlariga qarshi himoyalanishni unutmang.
 BLOG_END
