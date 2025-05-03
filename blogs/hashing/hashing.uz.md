@@ -21,7 +21,7 @@ Masalan, “SHA-256” xesh algoritmini olaylik. `"Salom"` qatorini necha marta 
 
 Agar biz parolimizni `tuzlasak`, biz bu hujumdan qutilishimiz mumkin. Agar foydalanuvchi oddiy parol ishlatsa, misol uchun `12345678`, va biz undan xayoliy parol yaratish uchun unga `s@1TValUe` kabi tuz qo'shsak, biz kamalak jadval hujumidan qutilamiz. Biz hashlangan parol bilan tuzni ikkalasini ham ma'lumotlar bazasida saqlaymiz. Parolni tekshirish uchun esa, biz kiritilingan parolga bazadagi tuzni qoshib hashlaymiz va bazadagi hashlangan parol bilan solishtiramiz.
 
-> parol + tuz = xayoliy parol
+> parol + tuz = tuzlangan parol
 
 ![Parolni tuzlash](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/photos/password_salting.webp?w=500&h=500)
 
@@ -61,4 +61,27 @@ Siz foydalanuvchining ID'sini cookie'da saqlamoqchisiz. Agar siz uni son ko'rini
 | Qaytaruvchanlik      | **Bir tomonga** (qaytarilmas)      | **Ikki tomonga** (qaytariladigan)       |
 | Output               | Aniq uzinlik                       | O'zgaruvchan uzunlik (ma'lumot asosida) |
 | Kalit ishlatilinishi | Kalit kerak emas                   | Kalit kerak                             |
+
+### Vaqt muammosi
+Vaqt bilan bog'liq muammoni tushunish uchun, biz avval == yoki === taqqoslashlar qanday ishlashini tushinishimiz kerak. Faraz qilaylik:
+```
+const user_input = "salom";
+const actual_password = "sa1om";
+```
+Taqqoslash har bir belgini alohida-alohida tekshiradi: 's' == 's', 'a' == 'a', 'l' == '1' — mana mos kelmaydigan joyi. Tekshirish darxol to'xtaydi. Bu "erta to'xtash" parolning bir qismi to'g'ri ekanligini bildiradi. Bir nechta urinishlar bilan hakerlar xaqiqiy parolni topib olishlari mumkin.
+
+Bu muammoni oldini olish uchun, har bir tekshirish taxmiman teng vaqtda baralishini taminlashimiz kerak.
+```
+function constantTimeCompare(a, b) {
+  if (a.length !== b.length) return false;
+
+  let result = 0;
+  for (let i = 0; i < a.length; i++) {
+    result |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  }
+  return result === 0;
+}
+```
+
+Hozircha menda shular. **Rate limits** bilan brute force hujumlariga qarshi himoyalanishni unutmang.
 BLOG_END

@@ -21,7 +21,7 @@ For example, take the hashing algorithm `SHA-256`. No matter how many times you 
 
 If we `salt` our plaintext, we can avoid such an attack. If a user enters a simple password, such as `12345678`, and we add a random salt like `s@1TValUe` to generate our virtual password and then hash it, we can avoid a rainbow table attack. We store both the hashed password and the salt. To check the password, we add the stored salt to the entered plaintext, hash it, and check the hashed value against our stored hash.
 
-> plaintext + salt = virtual password
+> plaintext + salt = salted password
 
 ![Salting a password](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/photos/password_salting.webp?w=500&h=500)
 
@@ -61,4 +61,27 @@ Imagine a scenario where you need to store a user ID in cookies. If you store it
 | Reversibility      | **One-way** (irreversible)       | **Two-way** (reversible)           |
 | Output             | Fixed length                     | Variable length (based on input)   |
 | Key usage          | No key needed                    | Requires key                       |
+
+### Timing attacks
+To understand timing attacks, we first need to know how == or === comparisons work under the hood. Let’s say we have:
+```
+const user_input = "hello";
+const actual_password = "he1lo";
+```
+The comparison goes character by character: 'h' == 'h', 'e' == 'e', 'l' == '1' — boom, mismatch. It exits immediately. This "early exit" can leak information that part of the password is correct. Over multiple attempts, hackers could reconstruct the actual password.
+
+To avoid this problem, we should ensure that every attempt takes roughly the same amount of time.
+```
+function constantTimeCompare(a, b) {
+  if (a.length !== b.length) return false;
+
+  let result = 0;
+  for (let i = 0; i < a.length; i++) {
+    result |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  }
+  return result === 0;
+}
+```
+
+This is all I have so far. Don't forget to protect against brute force attacks with **rate limits**.
 BLOG_END
