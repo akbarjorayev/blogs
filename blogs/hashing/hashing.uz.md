@@ -26,7 +26,7 @@ Agar biz parolimizni tuzlasak, biz bu hujumdan qutilishimiz mumkin. Agar foydala
 ![Parolni tuzlash](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/photos/password_salting.webp?w=500&h=500)
 
 Tuzlash bunday amalga oshirilinadi:
-```
+```javascript
 const crypto = require('crypto');
 
 function hashPassword(password, salt) {
@@ -64,14 +64,14 @@ Siz foydalanuvchining ID'sini cookie'da saqlamoqchisiz. Agar siz uni son ko'rini
 
 ### Vaqt muammosi
 Vaqt bilan bog'liq muammoni tushunish uchun, biz avval == yoki === taqqoslashlar qanday ishlashini tushinishimiz kerak. Faraz qilaylik:
-```
+```javascript
 const user_input = "salom";
 const actual_password = "sa1om";
 ```
 Taqqoslash har bir belgini alohida-alohida tekshiradi: 's' == 's', 'a' == 'a', 'l' == '1' — mana mos kelmaydigan joyi. Tekshirish darxol to'xtaydi. Bu "erta to'xtash" parolning bir qismi to'g'ri ekanligini bildiradi. Bir nechta urinishlar bilan hakerlar xaqiqiy parolni topib olishlari mumkin.
 
 Bu muammoni oldini olish uchun, har bir tekshirish taxmiman teng vaqtda baralishini taminlashimiz kerak.
-```
+```javascript
 function constantTimeCompare(a, b) {
   if (a.length !== b.length) return false;
 
