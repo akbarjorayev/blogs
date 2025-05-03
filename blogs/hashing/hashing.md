@@ -61,4 +61,25 @@ Imagine a scenario where you need to store a user ID in cookies. If you store it
 | Reversibility      | **One-way** (irreversible)       | **Two-way** (reversible)           |
 | Output             | Fixed length                     | Variable length (based on input)   |
 | Key usage          | No key needed                    | Requires key                       |
+
+### Timing attacks
+To understand timing attacks, we first need to know how == or === comparisons work under the hood. Let’s say we have:
+```
+const user_input = "hello";
+const actual_password = "he1lo";
+```
+The comparison goes character by character: 'h' == 'h', 'e' == 'e', 'l' == '1' — boom, mismatch. It exits immediately. This "early exit" can leak information that part of the password is correct. Over multiple attempts, hackers could reconstruct the actual password.
+
+To avoid this problem, we should ensure that every attempt takes roughly the same amount of time.
+```
+function constantTimeCompare(a, b) {
+  if (a.length !== b.length) return false;
+
+  let result = 0;
+  for (let i = 0; i < a.length; i++) {
+    result |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  }
+  return result === 0;
+}
+```
 BLOG_END
