@@ -34,7 +34,7 @@ Bu Socket.IO'da yana bir o'rnatilgan usuldir. Socket.IO'da biz xohlagancha mijoz
 WebSocket — bu xabar almashish uchun ikkala tomonlama to'g'ridan-to'g'ri ulanishni ta'minlaydigan xom (raw) ulanishdir. Socket.IO'da esa biz xabarlar, chatga qo'shilish/chiqish va boshqa narsalarni boshqarish uchun maxsus voqealarni (events) yaratishimiz mumkin.
 
 Server (Node.js)
-```
+```javascript
 const { Server } = require('socket.io');
 const io = new Server(3000);
 
@@ -44,7 +44,7 @@ io.on('connection', (socket) => {
 ```
 
 Fordalanuvchi (Brauzer)
-```
+```javascript
 const socket = io('http://localhost:3000');
 
 socket.emit('custom_event', 'Foydalanuvchidan salom!');
@@ -54,7 +54,7 @@ socket.on('response_event', (data) => console.log(data));
 ### Ishlash tezligi
 WebSocket ilova darajasidagi protokol ulanishi bo'lgani uchun, u Socket.IO'dan pastroq kechikish (latency)ga ega. Socket.IO esa voqeaga asoslangan aloqa kabi o'rnatilgan usullarni o'z ichiga oladi. Socket.IO xabar yuborganda, qo'shimcha metama'lumotlarni (masalan, voqea va ma'lumot o'zi) qo'shadi.
 
-```
+```javascript
 { "event": "custom_event", "data": "Salom" }
 ```
 

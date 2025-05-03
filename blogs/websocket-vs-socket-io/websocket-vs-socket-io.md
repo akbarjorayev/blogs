@@ -34,7 +34,7 @@ It is another built-in method in Socket.IO. In Socket.IO, we can send messages t
 WebSocket is a raw bidirectional connection that allows message exchange. Meanwhile, in Socket.IO, we can create custom events to handle messages, chat joining/leaving, and more.
 
 Server (Node.js)
-```
+```javascript
 const { Server } = require('socket.io');
 const io = new Server(3000);
 
@@ -44,7 +44,7 @@ io.on('connection', (socket) => {
 ```
 
 Client (Browser)
-```
+```javascript
 const socket = io('http://localhost:3000');
 
 socket.emit('custom_event', 'Hello from client!');
@@ -53,7 +53,7 @@ socket.on('response_event', (data) => console.log(data));
 
 ### Performance
 Because WebSocket is an application-layer protocol connection, it has lower latency than Socket.IO, which includes built-in methods like event-based communication. When Socket.IO sends a message, it adds additional metadata (e.g., event and data itself).
-```
+```javascript
 { "event": "custom_event", "data": "Hello" }
 ```
 
