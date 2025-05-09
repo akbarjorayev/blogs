@@ -1,6 +1,6 @@
 META_DATA_START
 title="Hash qilish"
-published="May 03, 2025"
+published="May 3, 2025"
 META_DATA_END
 
 BLOG_START
