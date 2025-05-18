@@ -1,7 +1,7 @@
 META_DATA_START
 title="WebSocket yoki Socket.IO"
 published="Mar 30, 2025"
-wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/photos/blog-wallpaper.webp"
+wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/photos/blog-wallpaper.webp?w=500&h=300"
 META_DATA_END
 
 BLOG_START
