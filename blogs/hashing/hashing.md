@@ -1,13 +1,13 @@
 META_DATA_START
 title="Hashing"
 published="May 3, 2025"
-wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/photos/blog-wallpaper.webp?w=500&h=300"
+wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/blog-wallpaper.webp?w=500&h=300"
 META_DATA_END
 
 BLOG_START
 Hashing — generating a hashed string from a given key or string so that it cannot be reversed back to its original form. The function that does this is called a *hash function*.
 
-![Plaintext to hash](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/photos/plaintext_to_hash.webp?w=500&h=333)
+![Plaintext to hash](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext_to_hash.webp?w=500&h=333)
 
 ### Why is hashing important?
 You should never store a password in a database as plaintext. If hackers gain access to our database, they could steal our users' passwords. Instead, store the **hashed password**.
@@ -24,7 +24,7 @@ If we salt our plaintext, we can avoid such an attack. If a user enters a simple
 
 > plaintext + salt = salted password
 
-![Salting a password](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/photos/password_salting.webp?w=500&h=500)
+![Salting a password](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password_salting.webp?w=500&h=500)
 
 Here's how you'd implement salting:
 ```javascript
@@ -87,7 +87,7 @@ function constantTimeCompare(a, b) {
 ### Hashing in dev
 In almost every programming language, there are *set* and *map* collections. The time complexity for CRUD (Create, Read, Update, Delete) operations in sets and maps is O(1), which means they happen instantly. They also use a `hash function` to create a **hash code** and store the data at that hash code. More on hashing in dev: [W3Schools Hash Tables](https://www.w3schools.com/dsa/dsa_theory_hashtables.php)
 
-![Gatsby Toast](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/photos/gatsby-toast.gif?w=478&h=200)
+![Gatsby Toast](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/gatsby-toast.gif?w=478&h=200)
 
 This is all I have so far. Don't forget to protect against brute force attacks with **rate limits**.
 BLOG_END

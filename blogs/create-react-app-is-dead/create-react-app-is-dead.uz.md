@@ -1,7 +1,7 @@
 META_DATA_START
 title="Create React App vafot etdi"
 published="Fev 25, 2025"
-wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/photos/blog-wallpaper.webp?w=500&h=300"
+wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/assets/blog-wallpaper.webp?w=500&h=300"
 META_DATA_END
 
 BLOG_START
@@ -17,7 +17,7 @@ CRA'ning ishlash samaradorligi — ayniqsa loyihalarni sekin qurish va eskirgan 
 - **Samarasiz qurishlar** – Loyihani production ga qo'yish uchun `npm build` ko'p resurs talab qiladi va deployment narxini oshiradi; 
 - **Samarasizlik** – Katta bundle’lar va eskirgan optimallashtirishlar foydalanuvchi ishlatishini sekinlashtiradi.  
 
-![Qaysi yo'ldan borish kerak?](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/photos/which_way_to_go.webp?w=500&h=750)
+![Qaysi yo'ldan borish kerak?](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/assets/which_way_to_go.webp?w=500&h=750)
 
 Agar o'rnini bosuvchi texnologiya izlayotgan bo'lsangiz, mana, ikkita eng yaxshi tanlov:  
 
