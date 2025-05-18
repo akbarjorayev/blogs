@@ -4,7 +4,7 @@ published="May 3, 2025"
 META_DATA_END
 
 BLOG_START
-Hashing1 — generating a hashed string from a given key or string so that it cannot be reversed back to its original form. The function that does this is called a *hash function*.
+Hashing — generating a hashed string from a given key or string so that it cannot be reversed back to its original form. The function that does this is called a *hash function*.
 
 ![Plaintext to hash](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/photos/plaintext_to_hash.webp?w=500&h=333)
 
