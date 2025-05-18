@@ -1,6 +1,7 @@
 META_DATA_START
 title="Hashing"
 published="May 3, 2025"
+wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/photos/blog-wallpaper.webp"
 META_DATA_END
 
 BLOG_START
