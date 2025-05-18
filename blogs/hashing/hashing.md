@@ -85,7 +85,9 @@ function constantTimeCompare(a, b) {
 ```
 
 ### Hashing in dev
-In almost every programming language, there are *set* and *map* collections. The time complexity for CRUD (Create, Read, Update, Delete) operations in sets and maps is O(1), which means they happen instantly. They also use a `hash_function` to create a **hash code** and store the data at that hash code. More on hashing in dev: [W3Schools Hash Tables](https://www.w3schools.com/dsa/dsa_theory_hashtables.php)
+In almost every programming language, there are *set* and *map* collections. The time complexity for CRUD (Create, Read, Update, Delete) operations in sets and maps is O(1), which means they happen instantly. They also use a `hash function` to create a **hash code** and store the data at that hash code. More on hashing in dev: [W3Schools Hash Tables](https://www.w3schools.com/dsa/dsa_theory_hashtables.php)
+
+![Gatsby Toast](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/photos/gatsby-toast.gif?w=478&h=200)
 
 This is all I have so far. Don't forget to protect against brute force attacks with **rate limits**.
 BLOG_END
