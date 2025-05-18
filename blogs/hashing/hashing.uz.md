@@ -1,13 +1,13 @@
 META_DATA_START
 title="Hash qilish"
 published="May 3, 2025"
-wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/photos/blog-wallpaper.webp?w=500&h=300"
+wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/blog-wallpaper.webp?w=500&h=300"
 META_DATA_END
 
 BLOG_START
 Hashing — berilgan kalit yoki satrni ortga qaytarib bo'lmaydigan shaklda xashlangan satrga aylantirish jarayoni. Buni amalga oshiradigan funksiya *xash funksiyasi* deb ataladi.
 
-![Oddiy matnni hashga o'girish](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/photos/plaintext_to_hash.webp?w=500&h=333)
+![Oddiy matnni hashga o'girish](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext_to_hash.webp?w=500&h=333)
 
 ### Hash qilish nega ahamiyatli?
 Parolni hech qachon ma'lumotlar bazasida oddiy matn (plaintext) sifatida saqlamang. Agar xakerlar ma'lumotlar bazamizga kirsa, foydalanuvchilarning parollarini o'g'irlashlari mumkin. Buning o'rniga, **xashlangan parolni** saqlang.
@@ -24,7 +24,7 @@ Agar biz parolimizni tuzlasak, biz bu hujumdan qutilishimiz mumkin. Agar foydala
 
 > parol + tuz = tuzlangan parol
 
-![Parolni tuzlash](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/photos/password_salting.webp?w=500&h=500)
+![Parolni tuzlash](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password_salting.webp?w=500&h=500)
 
 Tuzlash bunday amalga oshirilinadi:
 ```javascript
@@ -87,7 +87,7 @@ function constantTimeCompare(a, b) {
 ### Dasturlashda hash qilish
 Hamma dasturlash tillarida *set* va *map* kolleksiyalari bor. Ularda CRUD (Create, Read, Update, Delete) amallarini bajarish O(1) vaqt oladi, deyarli bir zumda. Ular ham **hash kod** yaratish uchun `hash function`dan foydalanadi va ma'lumotni anashu hash kodda saqlaydi. Dasturlashda hash qilish haqida batafsil: [W3Schools Hash Tables](https://www.w3schools.com/dsa/dsa_theory_hashtables.php)
 
-![Gatsby Toast](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/photos/gatsby-toast.gif?w=478&h=200)
+![Gatsby Toast](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/gatsby-toast.gif?w=478&h=200)
 
 Hozircha menda shular. **Rate limits** bilan brute force hujumlariga qarshi himoyalanishni unutmang.
 BLOG_END

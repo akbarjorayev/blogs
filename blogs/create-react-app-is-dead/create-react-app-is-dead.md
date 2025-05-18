@@ -1,7 +1,7 @@
 META_DATA_START
 title="Create React App is Dead"
 published="Feb 25, 2025"
-wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/photos/blog-wallpaper.webp?w=500&h=300"
+wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/assets/blog-wallpaper.webp?w=500&h=300"
 META_DATA_END
 
 BLOG_START
@@ -17,7 +17,7 @@ CRA's performance issues — especially slow build times and outdated tooling �
 - **Inefficient builds** – Longer build times increase CI/CD costs and slow down deployment.  
 - **Poor runtime performance** – Larger bundles and outdated optimizations lead to a slower user experience.  
 
-![Which way to go?](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/photos/which_way_to_go.webp?w=500&h=750)
+![Which way to go?](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/assets/which_way_to_go.webp?w=500&h=750)
 
 If you're looking for a replacement, here are two of the best options:  
 
