@@ -83,5 +83,8 @@ function constantTimeCompare(a, b) {
 }
 ```
 
+### Dasturlashda hash qilish
+Hamma dasturlash tillarida *set* va *map* kolleksiyalari bor. Ularda CRUD (Create, Read, Update, Delete) amallarini bajarish O(1) vaqt oladi, deyarli bir zumda. Ular ham **hash kod** yaratish uchun `hash_function`dan foydalanadi va ma'lumotni anashu hash kodda saqlaydi. Dasturlashda hash qilish haqida batafsil: [W3Schools Hash Tables](https://www.w3schools.com/dsa/dsa_theory_hashtables.php)
+
 Hozircha menda shular. **Rate limits** bilan brute force hujumlariga qarshi himoyalanishni unutmang.
 BLOG_END
