@@ -1,6 +1,7 @@
 META_DATA_START
 title="WebSocket vs Socket.IO"
 published="Mar 30, 2025"
+wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/photos/blog-wallpaper.webp"
 META_DATA_END
 
 BLOG_START
