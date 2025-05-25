@@ -7,7 +7,11 @@ META_DATA_END
 BLOG_START
 Hashing — berilgan kalit yoki satrni ortga qaytarib bo'lmaydigan shaklda xashlangan satrga aylantirish jarayoni. Buni amalga oshiradigan funksiya *xash funksiyasi* deb ataladi.
 
-![Oddiy matnni hashga o'girish](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext_to_hash.webp?w=500&h=333)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext_to_hash.dark.webp?w=500&h=333">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext_to_hash.light.webp?w=500&h=333">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext_to_hash.light.webp?w=500&h=333" alt="Oddiy matnni hashga o'girish">
+</picture>
 
 ## Hash qilish nega ahamiyatli?
 Parolni hech qachon ma'lumotlar bazasida oddiy matn (plaintext) sifatida saqlamang. Agar xakerlar ma'lumotlar bazamizga kirsa, foydalanuvchilarning parollarini o'g'irlashlari mumkin. Buning o'rniga, **xashlangan parolni** saqlang.
@@ -24,7 +28,11 @@ Agar biz parolimizni tuzlasak, biz bu hujumdan qutilishimiz mumkin. Agar foydala
 
 > parol + tuz = tuzlangan parol
 
-![Parolni tuzlash](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password_salting.webp?w=500&h=500)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password_salting.dark.webp?w=500&h=500">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password_salting.light.webp?w=500&h=500">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password_salting.light.webp?w=500&h=500" alt="Parolni tuzlash">
+</picture>
 
 Tuzlash bunday amalga oshirilinadi:
 ```javascript
