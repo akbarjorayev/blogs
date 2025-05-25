@@ -24,7 +24,11 @@ If we salt our plaintext, we can avoid such an attack. If a user enters a simple
 
 > plaintext + salt = salted password
 
-![Salting a password](https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password_salting.webp?w=500&h=500)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password_salting.webp?w=500&h=500">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password_salting.light.webp?w=500&h=500">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password_salting.webp?w=500&h=500">
+</picture>
 
 Here's how you'd implement salting:
 ```javascript
