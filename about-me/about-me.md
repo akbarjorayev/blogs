@@ -1,6 +1,6 @@
 Hi there! **I'm Akbar Jorayev, an 18-year-old Software Engineer from Uzbekistan**.
 
-![Azim Pulat and Me](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/about-me/assets/azim-pulat-and-me.webp?w=500&h=500)
+![It's me](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/about-me/assets/akbar-jorayev.webp?w=500&h=667)
 
 My journey into **software engineering** started in early 2022, when I first wrote my `Hello World` in **HTML** 😅. That small step turned into a passion for building, breaking, and learning.
 
