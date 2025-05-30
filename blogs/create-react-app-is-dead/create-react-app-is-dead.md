@@ -18,7 +18,11 @@ CRA's performance issues — especially slow build times and outdated tooling �
 - **Inefficient builds** – Longer build times increase CI/CD costs and slow down deployment.
 - **Poor runtime performance** – Larger bundles and outdated optimizations lead to a slower user experience.
 
-![Which way to go?](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/assets/which_way_to_go.webp?w=500&h=750)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/create-react-app-is-dead/assets/which-way-to-go.dark.webp?w=500&h=750">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/create-react-app-is-dead/assets/which-way-to-go.light.webp?w=500&h=750">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/create-react-app-is-dead/assets/which-way-to-go.light.webp?w=500&h=750" alt="Which way to go?">
+</picture>
 
 If you're looking for a replacement, here are two of the best options:
 

@@ -8,9 +8,9 @@ BLOG_START
 Hashing — generating a hashed string from a given key or string so that it cannot be reversed back to its original form. The function that does this is called a *hash function*.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext_to_hash.dark.webp?w=500&h=333">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext_to_hash.light.webp?w=500&h=333">
-  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext_to_hash.light.webp?w=500&h=333" alt="Plaintext to hash">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext-to-hash.dark.webp?w=500&h=333">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext-to-hash.light.webp?w=500&h=333">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext-to-hash.light.webp?w=500&h=333" alt="Plaintext to hash">
 </picture>
 
 ## Why is hashing important?
@@ -32,9 +32,9 @@ If we salt our plaintext, we can avoid such an attack. If a user enters a simple
 > plaintext + salt = salted password
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password_salting.dark.webp?w=500&h=500">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password_salting.light.webp?w=500&h=500">
-  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password_salting.light.webp?w=500&h=500" alt="Salting a password">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password-salting.dark.webp?w=500&h=500">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password-salting.light.webp?w=500&h=500">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password-salting.light.webp?w=500&h=500" alt="Salting a password">
 </picture>
 
 Here's how you'd implement salting:
