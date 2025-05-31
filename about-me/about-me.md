@@ -4,7 +4,11 @@ Hi there! **I'm Akbar Jorayev, an 18-year-old Software Engineer from Uzbekistan*
 
 My journey into **software engineering** started in early 2022, when I first wrote my `Hello World` in **HTML** 😅. That small step turned into a passion for building, breaking, and learning.
 
-![Akbar's YouTube](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/about-me/assets/akbar's-youtube.webp?w=500&h=281)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/about-me/assets/akbar's-youtube.dark.webp?w=500&h=281">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/about-me/assets/akbar's-youtube.light.webp?w=500&h=281">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/about-me/assets/akbar's-youtube.light.webp?w=500&h=281" alt="Akbar's YouTube">
+</picture>
 
 Now I teach tech stuff on my [YouTube channel](https://youtube.com/@akbarswe) — don't forget to hit the **Subscribe** button 😉. P.S. You can also join my [Telegram channel](https://t.me/akbarswe) for more tech updates!
 
