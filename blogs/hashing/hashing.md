@@ -1,10 +1,9 @@
-META_DATA_START
+---
 title="Hashing"
 published="May 3, 2025"
 wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/blog-wallpaper.webp?w=500&h=300"
-META_DATA_END
+---
 
-BLOG_START
 Hashing — generating a hashed string from a given key or string so that it cannot be reversed back to its original form. The function that does this is called a *hash function*.
 
 <picture>
@@ -108,4 +107,3 @@ In almost every programming language, there are *set* and *map* collections. The
 ![Gatsby Toast](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/gatsby-toast.gif?w=478&h=200)
 
 This is all I have so far. Don't forget to protect against brute force attacks with **rate limits**.
-BLOG_END

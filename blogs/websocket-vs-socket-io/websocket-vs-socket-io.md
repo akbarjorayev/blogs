@@ -1,10 +1,9 @@
-META_DATA_START
+---
 title="WebSocket vs Socket.IO"
 published="Mar 30, 2025"
 wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/blog-wallpaper.webp?w=500&h=300"
-META_DATA_END
+---
 
-BLOG_START
 Why do we need them? Both technologies connect the client and server and provide real-time communication. For example, they are essential for chat apps, multiplayer games, and other scenarios where real-time interaction between the client and server is crucial.
 
 We can achieve "real-time" communication by repeatedly sending HTTP requests at short intervals, but this approach is costly and inefficient for large applications.
@@ -83,4 +82,3 @@ Because WebSocket is an application-layer protocol connection, it has lower late
 
 1. Choose **Socket.IO** if you want to simplify development with more built-in methods while sacrificing a small fraction of time waiting for clients (e.g., chat apps, collaborative tools).
 2. Choose **WebSocket** if you want complete freedom over development, to build everything from scratch, and need high performance with low latency (e.g., trading platforms, gaming servers).
-BLOG_END

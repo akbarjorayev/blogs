@@ -1,10 +1,9 @@
-META_DATA_START
+---
 title="WebSocket yoki Socket.IO"
 published="Mar 30, 2025"
 wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/blog-wallpaper.webp?w=500&h=300"
-META_DATA_END
+---
 
-BLOG_START
 O'zi bizga ular nega kerak? Ikkala texnologiyalar ham mijoz bilan server'ni bog'laydi va ular o'rtasidagi real vaqt muloqotni ta'minlab beradi. Misol uchun, ularni biz chat ilovalarida, guruhlik o'yinlarda va mijoz bilan server orasidagi real vaqt muloqot kerak bolgan boshqa ko'plab ilovalarda ishlatishimiz mumkin.
 
 Biz "real vaqt" muloqotiga qisqa vaqtlarda HTTP so'rovini yuborish orqali erishishimiz mumkin, lekin bu usul bizga qimmatga tushadi va katta ilovalar uchun samarasizdir.
@@ -84,4 +83,3 @@ WebSocket ilova darajasidagi protokol ulanishi bo'lgani uchun, u Socket.IO'dan p
 1. **Socket.IO**'ni tanlang agar ko'proq o'rnatilgan usullar bilan rivojlantirishni soddalashtirishni xohlasangiz va mijozlar kutishda kichik vaqt sarflashni qabul qilsangiz (masalan, chat ilovalari, hamkorlik vositalari).
 
 2. **WebSocket**'ni tanlang agar rivojlantirishda to'liq erkinlikka ega bo'lishni, hamma narsani boshidan qurishni va yuqori samaradorlik hamda past kechikish (latency) talab qiladigan tizimlar (masalan, savdo platformalari, o'yin serverlari) qurishni istasangiz.
-BLOG_END
