@@ -1,7 +1,7 @@
 ---
 title="Hashing"
 published="May 3, 2025"
-wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/blog-wallpaper.webp?w=500&h=300"
+wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/blog-wallpaper.light.webp?w=500&h=300"
 ---
 
 Hashing — generating a hashed string from a given key or string so that it cannot be reversed back to its original form. The function that does this is called a *hash function*.

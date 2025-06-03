@@ -1,7 +1,7 @@
 ---
 title="Hash qilish"
 published="May 3, 2025"
-wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/blog-wallpaper.webp?w=500&h=300"
+wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/blog-wallpaper.light.webp?w=500&h=300"
 ---
 
 Hashing — berilgan kalit yoki satrni ortga qaytarib bo'lmaydigan shaklda xashlangan satrga aylantirish jarayoni. Buni amalga oshiradigan funksiya *xash funksiyasi* deb ataladi.
