@@ -1,10 +1,9 @@
-META_DATA_START
+---
 title="Hash qilish"
 published="May 3, 2025"
 wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/blog-wallpaper.webp?w=500&h=300"
-META_DATA_END
+---
 
-BLOG_START
 Hashing — berilgan kalit yoki satrni ortga qaytarib bo'lmaydigan shaklda xashlangan satrga aylantirish jarayoni. Buni amalga oshiradigan funksiya *xash funksiyasi* deb ataladi.
 
 <picture>
@@ -108,4 +107,3 @@ Hamma dasturlash tillarida *set* va *map* kolleksiyalari bor. Ularda CRUD (Creat
 ![Gatsby Toast](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/gatsby-toast.gif?w=478&h=200)
 
 Hozircha menda shular. **Rate limits** bilan brute force hujumlariga qarshi himoyalanishni unutmang.
-BLOG_END

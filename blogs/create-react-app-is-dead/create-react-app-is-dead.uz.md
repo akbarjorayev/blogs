@@ -1,10 +1,9 @@
-META_DATA_START
+---
 title="Create React App vafot etdi"
 published="Fev 25, 2025"
 wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/assets/blog-wallpaper.webp?w=500&h=300"
-META_DATA_END
+---
 
-BLOG_START
 Ha, [Create React App (CRA)](https://react.dev/blog/2025/02/14/sunsetting-create-react-app) rasman vafot etdi.
 
 React, Facebook (hozirgi Meta) tomonidan ishlab chiqilgan bo'lib, dinamik foydalanuvchi interfeyslarini yaratish uchun eng mashhur kutubxonalardan biri bo'lib qolmoqda. Yillar davomida CRA React loyihalarini tez ishga tushirish uchun asosiy vosita bo'lib kelgan va haftasiga 200 mingdan ortiq yuklab olingan.
@@ -31,4 +30,3 @@ Vite — bu yuqori samarali frontend qurilish vositasi bo'lib, CRA'ga nisbatan s
 Next.js to'liq stack React ilovalari uchun eng yaxshi tanlovdir. U server komponentlarni render qilish (SSR), statik sayt generatsiyasi (SSG), API yo'llari va middleware larni taqdim etadi va buni siz full-stack va katta loyihalarda bemalol ishlata olasiz.
 
 React ekotizimi rivojlanishi bilan, Vite va Next.js kabi zamonaviy vositalar CRA'ga qaraganda ancha yaxshi tezlikni taminlab bermoqda. Agar siz hali ham CRA'dan foydalanayotgan bo'lsangiz, endi u bilan xayrlashish payti keldi.
-BLOG_END

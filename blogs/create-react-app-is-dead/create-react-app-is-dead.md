@@ -1,10 +1,9 @@
-META_DATA_START
+---
 title="Create React App is Dead"
 published="Feb 25, 2025"
 wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/assets/blog-wallpaper.webp?w=500&h=300"
-META_DATA_END
+---
 
-BLOG_START
 Yes, [Create React App (CRA)](https://react.dev/blog/2025/02/14/sunsetting-create-react-app) is officially dead.
 
 React, developed by Facebook (now Meta), remains one of the most popular libraries for building dynamic user interfaces. For years, CRA was the go-to tool for bootstrapping React projects, with over 200K downloads per week.
@@ -35,4 +34,3 @@ Vite is a high-performance frontend build tool that dramatically improves speed 
 Next.js is the preferred choice for full-stack React applications. It offers server-side rendering (SSR), static site generation (SSG), API routes, and middleware, making it ideal for performance-focused and scalable applications.
 
 As the React ecosystem evolves, modern tools like Vite and Next.js provide a far superior developer experience compared to CRA. If you're still using CRA, now is the time to migrate.
-BLOG_END
