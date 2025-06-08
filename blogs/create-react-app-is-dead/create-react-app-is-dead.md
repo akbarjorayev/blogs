@@ -18,9 +18,9 @@ CRA's performance issues — especially slow build times and outdated tooling �
 - **Poor runtime performance** – Larger bundles and outdated optimizations lead to a slower user experience.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/create-react-app-is-dead/assets/which-way-to-go.dark.webp?w=500&h=750">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/create-react-app-is-dead/assets/which-way-to-go.light.webp?w=500&h=750">
-  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/create-react-app-is-dead/assets/which-way-to-go.light.webp?w=500&h=750" alt="Which way to go?">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/create-react-app-is-dead/assets/which-way-to-go.dark.webp?w=367&h=550">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/create-react-app-is-dead/assets/which-way-to-go.light.webp?w=367&h=550">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/create-react-app-is-dead/assets/which-way-to-go.light.webp?w=367&h=550" alt="Which way to go?">
 </picture>
 
 If you're looking for a replacement, here are two of the best options:
