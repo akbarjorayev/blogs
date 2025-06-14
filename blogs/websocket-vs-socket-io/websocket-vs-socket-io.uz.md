@@ -13,7 +13,6 @@ Biz "real vaqt" muloqotiga qisqa vaqtlarda HTTP so'rovini yuborish orqali erishi
 WebSocket — bu TCP ustida ishlovchi ilova darajasidagi protokol bo'lib, mijoz va server o'rtasida ikki tomonlama aloqa o'rnatishga imkon beradi. U mijoz tomonidan yuborilgan **HTTP Upgrade** so'rovi orqali bog'lanishni o'rnatadi va server javob sifatida holat kodini qaytaradi. Agar holat kodi `101` bo'lsa, bog'lanish muvaffaqiyatli o'rnatiladi; aks holda, bog'lanish muvaffaqiyatsiz tugaydi. Bog'lanish o'rnatilgach, WebSocket aloqa uchun TCP/IP ulanishidan foydalanadi.
 
 <picture>
-
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/websocket-logo.dark.webp?w=500&h=180">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/websocket-logo.light.webp?w=500&h=180">
   <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/websocket-logo.light.webp?w=500&h=180" alt="WebSocket logo">
@@ -24,7 +23,6 @@ WebSocket — bu TCP ustida ishlovchi ilova darajasidagi protokol bo'lib, mijoz 
 Socket.IO — bu JavaScript kutubxonasi bo'lib, real vaqt rejimidagi aloqa o'rnatish uchun WebSocket'dan foydalanadi. Agar WebSocket mavjud bo'lmasa, u uzun so'rov (long polling) usuliga o'tadi. U WebSocket bilan bir xil funksionallikka ega, lekin qo'shimcha o'rnatilgan xususiyatlarni o'z ichiga olganligi sababli ayrim hollarda yanada qulayroq hisoblanadi.
 
 <picture>
-
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/socket-io-logo.dark.webp?w=500&h=180">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/socket-io-logo.light.webp?w=500&h=180">
   <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/socket-io-logo.light.webp?w=500&h=180" alt="Socket.IO logo">
@@ -83,3 +81,7 @@ WebSocket ilova darajasidagi protokol ulanishi bo'lgani uchun, u Socket.IO'dan p
 1. **Socket.IO**'ni tanlang agar ko'proq o'rnatilgan usullar bilan rivojlantirishni soddalashtirishni xohlasangiz va mijozlar kutishda kichik vaqt sarflashni qabul qilsangiz (masalan, chat ilovalari, hamkorlik vositalari).
 
 2. **WebSocket**'ni tanlang agar rivojlantirishda to'liq erkinlikka ega bo'lishni, hamma narsani boshidan qurishni va yuqori samaradorlik hamda past kechikish (latency) talab qiladigan tizimlar (masalan, savdo platformalari, o'yin serverlari) qurishni istasangiz.
+
+## Shaxsiy tajriba
+
+Men [Temprora](https://github.com/temprora)'da Socket.IO bilan ishlaganman, bemalol ko'rib chiqing va hissa qo'shing.
