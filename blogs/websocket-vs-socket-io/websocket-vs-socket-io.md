@@ -13,7 +13,6 @@ We can achieve "real-time" communication by repeatedly sending HTTP requests at 
 WebSocket is an application-layer protocol over TCP that enables bidirectional communication between a client and a server. It establishes a connection through a single **HTTP Upgrade** request from the client, and the server responds with a status code. If the status code is `101`, the connection is established; otherwise, the connection fails. Once established, WebSocket uses a TCP/IP connection to maintain communication.
 
 <picture>
-
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/websocket-logo.dark.webp?w=500&h=180">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/websocket-logo.light.webp?w=500&h=180">
   <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/websocket-logo.light.webp?w=500&h=180" alt="WebSocket logo">
@@ -24,7 +23,6 @@ WebSocket is an application-layer protocol over TCP that enables bidirectional c
 Socket.IO is a JavaScript library that uses WebSocket when available to establish a real-time connection. If WebSocket is unavailable, it falls back to long polling. It has the same functionality as WebSocket but includes additional built-in features, making it more advantageous in certain cases.
 
 <picture>
-
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/socket-io-logo.dark.webp?w=500&h=180">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/socket-io-logo.light.webp?w=500&h=180">
   <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/socket-io-logo.light.webp?w=500&h=180" alt="Socket.IO logo">
@@ -82,3 +80,7 @@ Because WebSocket is an application-layer protocol connection, it has lower late
 
 1. Choose **Socket.IO** if you want to simplify development with more built-in methods while sacrificing a small fraction of time waiting for clients (e.g., chat apps, collaborative tools).
 2. Choose **WebSocket** if you want complete freedom over development, to build everything from scratch, and need high performance with low latency (e.g., trading platforms, gaming servers).
+
+## Own experience
+
+I worked with Socket.IO on my project [Temprora](https://github.com/temprora), feel free to check it out and contribute.
