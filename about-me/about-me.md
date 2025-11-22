@@ -16,6 +16,6 @@ Join my [Telegram channel](https://t.me/akbarswe) for updates, tips, and random 
 
 Explore my [blog](/blog) and [projects](/projects) — everything's open source and made for everyone. Feel free to dive into my [codebase](https://github.com/akbarjorayev) and contribute. If you find something useful, [buy me a coffee](https://buymeacoffee.com/akbarjorayev) ☕.
 
-I am open to [connections](https://www.linkedin.com/in/akbarjorayev), contributions, or just chatting. Don't be shy — reach out and say hello! [akbarjonjorayev001@gmail.com](mailto:akbarjonjorayev001@gmail.com) I'll try to respond within 48 hours, who knows?
+I am open to [connections](https://www.linkedin.com/in/akbarjorayev), contributions, or just chatting. Don't be shy — reach out and say hello! [@akbarswe_bot](https://t.me/akbarswe_bot) I'll try to respond within 24 hours, who knows?
 
 In short, it's me **Akbar**. Thanks for stopping by, and good luck on your own journey!
