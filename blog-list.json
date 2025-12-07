@@ -1,14 +1,17 @@
-{
-  "hashing": {
+[
+  {
+    "slug": "hashing",
     "date": "2025-05-03",
     "title": "Hashing"
   },
-  "websocket-vs-socket-io": {
+  {
+    "slug": "websocket-vs-socket-io",
     "date": "2025-03-30",
     "title": "WebSocket vs Socket.IO"
   },
-  "create-react-app-is-dead": {
+  {
+    "slug": "create-react-app-is-dead",
     "date": "2025-02-25",
     "title": "Create React App is Dead"
   }
-}
+]
