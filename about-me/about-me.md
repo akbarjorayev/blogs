@@ -2,7 +2,7 @@
 
 I'm always curious about how things work under the hood. Whether it's crafting clean code, experimenting with new tech, or figuring out the weird bugs that show up at 2 AM.
 
-<img src="https://firebasestorage.googleapis.com/v0/b/akbarswe.firebasestorage.app/o/og%2Fog.webp?alt=media&w=1024&h=1365" alt="It's me Akbar Jorayev">
+<img src="https://firebasestorage.googleapis.com/v0/b/akbarswe.firebasestorage.app/o/og%2Fog.webp?alt=media?w=1024&h=1365" alt="It's me Akbar Jorayev">
 
 My journey into **software engineering** started in early 2022, when I first wrote my `Hello World` in HTML. That small step turned into a passion for building, breaking, and learning.
 
