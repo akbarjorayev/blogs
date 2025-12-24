@@ -51,23 +51,21 @@ WebSocket — bu xabar almashish uchun ikkala tomonlama to'g'ridan-to'g'ri ulani
 Server (Node.js)
 
 ```javascript
-const { Server } = require('socket.io')
-const io = new Server(3000)
+const { Server } = require('socket.io');
+const io = new Server(3000);
 
 io.on('connection', (socket) => {
-  socket.on('custom_event', (data) =>
-    socket.emit('response_event', 'Serverdan salom!')
-  )
-})
+    socket.on('custom_event', (data) => socket.emit('response_event', 'Serverdan salom!'));
+});
 ```
 
 Fordalanuvchi (Brauzer)
 
 ```javascript
-const socket = io('http://localhost:3000')
+const socket = io('http://localhost:3000');
 
-socket.emit('custom_event', 'Foydalanuvchidan salom!')
-socket.on('response_event', (data) => console.log(data))
+socket.emit('custom_event', 'Foydalanuvchidan salom!');
+socket.on('response_event', (data) => console.log(data));
 ```
 
 ### Ishlash tezligi

@@ -51,23 +51,21 @@ WebSocket is a raw bidirectional connection that allows message exchange. Meanwh
 Server (Node.js)
 
 ```javascript
-const { Server } = require('socket.io')
-const io = new Server(3000)
+const { Server } = require('socket.io');
+const io = new Server(3000);
 
 io.on('connection', (socket) => {
-  socket.on('custom_event', (data) =>
-    socket.emit('response_event', 'Hello from server!')
-  )
-})
+    socket.on('custom_event', (data) => socket.emit('response_event', 'Hello from server!'));
+});
 ```
 
 Client (Browser)
 
 ```javascript
-const socket = io('http://localhost:3000')
+const socket = io('http://localhost:3000');
 
-socket.emit('custom_event', 'Hello from client!')
-socket.on('response_event', (data) => console.log(data))
+socket.emit('custom_event', 'Hello from client!');
+socket.on('response_event', (data) => console.log(data));
 ```
 
 ### Performance
