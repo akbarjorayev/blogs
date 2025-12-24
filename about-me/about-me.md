@@ -2,14 +2,14 @@
 
 I'm always curious about how things work under the hood. Whether it's crafting clean code, experimenting with new tech, or figuring out the weird bugs that show up at 2 AM.
 
-<img src="https://firebasestorage.googleapis.com/v0/b/akbarswe.firebasestorage.app/o/og%2Fog.webp?alt=media&w=1024&h=1365" alt="It's me Akbar Jorayev">
+<img src="https://firebasestorage.googleapis.com/v0/b/akbarswe.firebasestorage.app/o/og%2Fog.webp?alt=media" alt="It's me Akbar Jorayev" width="1024" height="1365">
 
 My journey into **software engineering** started in early 2022, when I first wrote my `Hello World` in HTML. That small step turned into a passion for building, breaking, and learning.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/about-me/assets/akbar's-telegram.dark.webp?w=286&h=500">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/about-me/assets/akbar's-telegram.light.webp?w=286&h=500">
-  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/about-me/assets/akbar's-telegram.light.webp?w=286&h=500" alt="Akbar's Telegram Channel">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/about-me/assets/akbar's-telegram.dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/about-me/assets/akbar's-telegram.light.webp">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/about-me/assets/akbar's-telegram.light.webp" alt="Akbar's Telegram Channel" width="286" height="500">
 </picture>
 
 Join my [Telegram channel](https://t.me/akbarswe) for updates, tips, and random tech thoughts — and feel free to share yours in the chat.

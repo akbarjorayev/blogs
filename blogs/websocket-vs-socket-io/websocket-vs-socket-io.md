@@ -1,7 +1,7 @@
 ---
 title="WebSocket vs Socket.IO"
 published="Mar 30, 2025"
-wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/blog-wallpaper.light.webp?w=500&h=300"
+wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/blog-wallpaper.light.webp"
 ---
 
 Why do we need them? Both technologies connect the client and server and provide real-time communication. For example, they are essential for chat apps, multiplayer games, and other scenarios where real-time interaction between the client and server is crucial.
@@ -13,9 +13,9 @@ We can achieve "real-time" communication by repeatedly sending HTTP requests at 
 WebSocket is an application-layer protocol over TCP that enables bidirectional communication between a client and a server. It establishes a connection through a single **HTTP Upgrade** request from the client, and the server responds with a status code. If the status code is `101`, the connection is established; otherwise, the connection fails. Once established, WebSocket uses a TCP/IP connection to maintain communication.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/websocket-logo.dark.webp?w=500&h=180">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/websocket-logo.light.webp?w=500&h=180">
-  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/websocket-logo.light.webp?w=500&h=180" alt="WebSocket logo">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/websocket-logo.dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/websocket-logo.light.webp">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/websocket-logo.light.webp" alt="WebSocket logo" width="500" height="180">
 </picture>
 
 ## Socket.IO
@@ -23,9 +23,9 @@ WebSocket is an application-layer protocol over TCP that enables bidirectional c
 Socket.IO is a JavaScript library that uses WebSocket when available to establish a real-time connection. If WebSocket is unavailable, it falls back to long polling. It has the same functionality as WebSocket but includes additional built-in features, making it more advantageous in certain cases.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/socket-io-logo.dark.webp?w=500&h=180">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/socket-io-logo.light.webp?w=500&h=180">
-  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/socket-io-logo.light.webp?w=500&h=180" alt="Socket.IO logo">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/socket-io-logo.dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/socket-io-logo.light.webp">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/socket-io-logo.light.webp" alt="Socket.IO logo" width="500" height="180">
 </picture>
 
 ## Which is which?

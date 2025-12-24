@@ -1,15 +1,15 @@
 ---
 title="Hashing"
 published="May 3, 2025"
-wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/blog-wallpaper.light.webp?w=500&h=300"
+wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/blog-wallpaper.light.webp"
 ---
 
 Hashing — generating a hashed string from a given key or string so that it cannot be reversed back to its original form. The function that does this is called a *hash function*.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext-to-hash.dark.webp?w=500&h=333">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext-to-hash.light.webp?w=500&h=333">
-  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext-to-hash.light.webp?w=500&h=333" alt="Plaintext to hash">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext-to-hash.dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext-to-hash.light.webp">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext-to-hash.light.webp" alt="Plaintext to hash" width="500" height="333">
 </picture>
 
 ## Why is hashing important?
@@ -31,9 +31,9 @@ If we salt our plaintext, we can avoid such an attack. If a user enters a simple
 > plaintext + salt = salted password
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password-salting.dark.webp?w=500&h=500">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password-salting.light.webp?w=500&h=500">
-  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password-salting.light.webp?w=500&h=500" alt="Salting a password">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password-salting.dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password-salting.light.webp">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password-salting.light.webp" alt="Salting a password" width="500" height="500">
 </picture>
 
 Here's how you'd implement salting:
@@ -104,6 +104,6 @@ function constantTimeCompare(a, b) {
 
 In almost every programming language, there are *set* and *map* collections. The time complexity for CRUD (Create, Read, Update, Delete) operations in sets and maps is O(1), which means they happen instantly. They also use a `hash function` to create a **hash code** and store the data at that hash code. More on hashing in dev: [W3Schools Hash Tables](https://www.w3schools.com/dsa/dsa_theory_hashtables.php)
 
-![Gatsby Toast](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/gatsby-toast.gif?w=478&h=200)
+<img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/gatsby-toast.gif" alt="Gatsby Toast" width="478" height="200">
 
 This is all I have so far. Don't forget to protect against brute force attacks with **rate limits**.

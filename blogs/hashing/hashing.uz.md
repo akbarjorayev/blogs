@@ -1,15 +1,15 @@
 ---
 title="Hash qilish"
 published="May 3, 2025"
-wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/blog-wallpaper.light.webp?w=500&h=300"
+wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/blog-wallpaper.light.webp"
 ---
 
 Hashing — berilgan kalit yoki satrni ortga qaytarib bo'lmaydigan shaklda xashlangan satrga aylantirish jarayoni. Buni amalga oshiradigan funksiya *xash funksiyasi* deb ataladi.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext-to-hash.dark.webp?w=500&h=333">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext-to-hash.light.webp?w=500&h=333">
-  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext-to-hash.light.webp?w=500&h=333" alt="Oddiy matnni hashga o'girish">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext-to-hash.dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext-to-hash.light.webp">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext-to-hash.light.webp" alt="Oddiy matnni hashga o'girish" width="500" height="333" />
 </picture>
 
 ## Hash qilish nega ahamiyatli?
@@ -31,9 +31,9 @@ Agar biz parolimizni tuzlasak, biz bu hujumdan qutilishimiz mumkin. Agar foydala
 > parol + tuz = tuzlangan parol
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password-salting.dark.webp?w=500&h=500">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password-salting.light.webp?w=500&h=500">
-  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password-salting.light.webp?w=500&h=500" alt="Parolni tuzlash">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password-salting.dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password-salting.light.webp">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password-salting.light.webp" alt="Parolni tuzlash" width="500" height="500" />
 </picture>
 
 Tuzlash bunday amalga oshirilinadi:
@@ -104,6 +104,6 @@ function constantTimeCompare(a, b) {
 
 Hamma dasturlash tillarida *set* va *map* kolleksiyalari bor. Ularda CRUD (Create, Read, Update, Delete) amallarini bajarish O(1) vaqt oladi, deyarli bir zumda. Ular ham **hash kod** yaratish uchun `hash function`dan foydalanadi va ma'lumotni anashu hash kodda saqlaydi. Dasturlashda hash qilish haqida batafsil: [W3Schools Hash Tables](https://www.w3schools.com/dsa/dsa_theory_hashtables.php)
 
-![Gatsby Toast](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/gatsby-toast.gif?w=478&h=200)
+<img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/gatsby-toast.gif" alt="Gatsby Toast" width="478" height="200">
 
 Hozircha menda shular. **Rate limits** bilan brute force hujumlariga qarshi himoyalanishni unutmang.
