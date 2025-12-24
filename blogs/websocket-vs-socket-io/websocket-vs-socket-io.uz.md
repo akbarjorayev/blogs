@@ -1,7 +1,7 @@
 ---
 title="WebSocket yoki Socket.IO"
 published="Mar 30, 2025"
-wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/blog-wallpaper.light.webp?w=500&h=300"
+wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/blog-wallpaper.light.webp"
 ---
 
 O'zi bizga ular nega kerak? Ikkala texnologiyalar ham mijoz bilan server'ni bog'laydi va ular o'rtasidagi real vaqt muloqotni ta'minlab beradi. Misol uchun, ularni biz chat ilovalarida, guruhlik o'yinlarda va mijoz bilan server orasidagi real vaqt muloqot kerak bolgan boshqa ko'plab ilovalarda ishlatishimiz mumkin.
@@ -13,9 +13,9 @@ Biz "real vaqt" muloqotiga qisqa vaqtlarda HTTP so'rovini yuborish orqali erishi
 WebSocket — bu TCP ustida ishlovchi ilova darajasidagi protokol bo'lib, mijoz va server o'rtasida ikki tomonlama aloqa o'rnatishga imkon beradi. U mijoz tomonidan yuborilgan **HTTP Upgrade** so'rovi orqali bog'lanishni o'rnatadi va server javob sifatida holat kodini qaytaradi. Agar holat kodi `101` bo'lsa, bog'lanish muvaffaqiyatli o'rnatiladi; aks holda, bog'lanish muvaffaqiyatsiz tugaydi. Bog'lanish o'rnatilgach, WebSocket aloqa uchun TCP/IP ulanishidan foydalanadi.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/websocket-logo.dark.webp?w=500&h=180">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/websocket-logo.light.webp?w=500&h=180">
-  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/websocket-logo.light.webp?w=500&h=180" alt="WebSocket logo">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/websocket-logo.dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/websocket-logo.light.webp">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/websocket-logo.light.webp" alt="WebSocket logo" width="500" height="180">
 </picture>
 
 ## Socket.IO
@@ -23,9 +23,9 @@ WebSocket — bu TCP ustida ishlovchi ilova darajasidagi protokol bo'lib, mijoz 
 Socket.IO — bu JavaScript kutubxonasi bo'lib, real vaqt rejimidagi aloqa o'rnatish uchun WebSocket'dan foydalanadi. Agar WebSocket mavjud bo'lmasa, u uzun so'rov (long polling) usuliga o'tadi. U WebSocket bilan bir xil funksionallikka ega, lekin qo'shimcha o'rnatilgan xususiyatlarni o'z ichiga olganligi sababli ayrim hollarda yanada qulayroq hisoblanadi.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/socket-io-logo.dark.webp?w=500&h=180">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/socket-io-logo.light.webp?w=500&h=180">
-  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/socket-io-logo.light.webp?w=500&h=180" alt="Socket.IO logo">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/socket-io-logo.dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/socket-io-logo.light.webp">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/socket-io-logo.light.webp" alt="Socket.IO logo" width="500" height="180">
 </picture>
 
 ## Qaysi biri qanaqa?
@@ -51,21 +51,23 @@ WebSocket — bu xabar almashish uchun ikkala tomonlama to'g'ridan-to'g'ri ulani
 Server (Node.js)
 
 ```javascript
-const { Server } = require('socket.io');
-const io = new Server(3000);
+const { Server } = require('socket.io')
+const io = new Server(3000)
 
 io.on('connection', (socket) => {
-    socket.on('custom_event', (data) => socket.emit('response_event', 'Serverdan salom!'));
-});
+  socket.on('custom_event', (data) =>
+    socket.emit('response_event', 'Serverdan salom!')
+  )
+})
 ```
 
 Fordalanuvchi (Brauzer)
 
 ```javascript
-const socket = io('http://localhost:3000');
+const socket = io('http://localhost:3000')
 
-socket.emit('custom_event', 'Foydalanuvchidan salom!');
-socket.on('response_event', (data) => console.log(data));
+socket.emit('custom_event', 'Foydalanuvchidan salom!')
+socket.on('response_event', (data) => console.log(data))
 ```
 
 ### Ishlash tezligi

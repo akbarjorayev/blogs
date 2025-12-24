@@ -1,15 +1,15 @@
 ---
 title="Hash qilish"
 published="May 3, 2025"
-wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/blog-wallpaper.light.webp?w=500&h=300"
+wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/blog-wallpaper.light.webp"
 ---
 
-Hashing — berilgan kalit yoki satrni ortga qaytarib bo'lmaydigan shaklda xashlangan satrga aylantirish jarayoni. Buni amalga oshiradigan funksiya *xash funksiyasi* deb ataladi.
+Hashing — berilgan kalit yoki satrni ortga qaytarib bo'lmaydigan shaklda xashlangan satrga aylantirish jarayoni. Buni amalga oshiradigan funksiya _xash funksiyasi_ deb ataladi.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext-to-hash.dark.webp?w=500&h=333">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext-to-hash.light.webp?w=500&h=333">
-  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext-to-hash.light.webp?w=500&h=333" alt="Oddiy matnni hashga o'girish">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext-to-hash.dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext-to-hash.light.webp">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/plaintext-to-hash.light.webp" alt="Oddiy matnni hashga o'girish" width="500" height="333" />
 </picture>
 
 ## Hash qilish nega ahamiyatli?
@@ -31,36 +31,36 @@ Agar biz parolimizni tuzlasak, biz bu hujumdan qutilishimiz mumkin. Agar foydala
 > parol + tuz = tuzlangan parol
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password-salting.dark.webp?w=500&h=500">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password-salting.light.webp?w=500&h=500">
-  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password-salting.light.webp?w=500&h=500" alt="Parolni tuzlash">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password-salting.dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password-salting.light.webp">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/hashing/assets/password-salting.light.webp" alt="Parolni tuzlash" width="500" height="500" />
 </picture>
 
 Tuzlash bunday amalga oshirilinadi:
 
 ```javascript
-const crypto = require('crypto');
+const crypto = require('crypto')
 
 function hashPassword(password, salt) {
-  return crypto.createHmac('sha256', salt).update(password).digest('hex');
+  return crypto.createHmac('sha256', salt).update(password).digest('hex')
 }
 
 function verifyPassword(inputPassword, salt, storedHash) {
-  return hashPassword(inputPassword, salt) === storedHash;
+  return hashPassword(inputPassword, salt) === storedHash
 }
 
 function getSalt() {
-  return crypto.randomBytes(16).toString('hex');
+  return crypto.randomBytes(16).toString('hex')
 }
 
-const simplePassword = '12345678';
-const salt = getSalt();
-const hashedPassword = hashPassword(simplePassword, salt);
+const simplePassword = '12345678'
+const salt = getSalt()
+const hashedPassword = hashPassword(simplePassword, salt)
 
-const inputPassword = '12345678';
-const isValid = verifyPassword(inputPassword, salt, hashedPassword);
+const inputPassword = '12345678'
+const isValid = verifyPassword(inputPassword, salt, hashedPassword)
 
-console.log(isValid);
+console.log(isValid)
 ```
 
 ## Hash qilish ≠ Shifrlash
@@ -68,20 +68,20 @@ console.log(isValid);
 Shifrlash - kalit yordamida ma'lumotlarni himoya qilish, uni o'qib bo'lmaydigan matnga aylantirishdir, buni esa faqat shu kalit yordamida asl ko'rinishga keltirish mumkin.
 
 Siz foydalanuvchining ID'sini cookie'da saqlamoqchisiz. Agar siz uni son ko'rinishida (masalan, 1, 2, 3...) saqlasangiz, foydalanuvchi uni o'zgartirib boshqa foydalanuvchi sifatida server'ga so'rovlar yuborishi mumkin. Lekin, siz foydalanuvchi ID'sini shifrlanganini saqlasangiz, uni faqatgina siz asl holiga keltirib o'qiy olasiz. **Bu kalitni hech kimga bermang**.
-| Xususiyat            | Hash qilish                        | Shifrlash                               |
+| Xususiyat | Hash qilish | Shifrlash |
 |----------------------|------------------------------------|-----------------------------------------|
-| Maqsad               | Ma'lumotlar xavfsizligi            | Ma'lumotlarning maxfiyligi              |
-| Qaytaruvchanlik      | **Bir tomonga** (qaytarilmas)      | **Ikki tomonga** (qaytariladigan)       |
-| Output               | Aniq uzinlik                       | O'zgaruvchan uzunlik (ma'lumot asosida) |
-| Kalit ishlatilinishi | Kalit kerak emas                   | Kalit kerak                             |
+| Maqsad | Ma'lumotlar xavfsizligi | Ma'lumotlarning maxfiyligi |
+| Qaytaruvchanlik | **Bir tomonga** (qaytarilmas) | **Ikki tomonga** (qaytariladigan) |
+| Output | Aniq uzinlik | O'zgaruvchan uzunlik (ma'lumot asosida) |
+| Kalit ishlatilinishi | Kalit kerak emas | Kalit kerak |
 
 ## Vaqt muammosi
 
 Vaqt bilan bog'liq muammoni tushunish uchun, biz avval == yoki === taqqoslashlar qanday ishlashini tushinishimiz kerak. Faraz qilaylik:
 
 ```javascript
-const user_input = "salom";
-const actual_password = "sa1om";
+const user_input = 'salom'
+const actual_password = 'sa1om'
 ```
 
 Taqqoslash har bir belgini alohida-alohida tekshiradi: 's' == 's', 'a' == 'a', 'l' == '1' — mana mos kelmaydigan joyi. Tekshirish darxol to'xtaydi. Bu "erta to'xtash" parolning bir qismi to'g'ri ekanligini bildiradi. Bir nechta urinishlar bilan hakerlar xaqiqiy parolni topib olishlari mumkin.
@@ -90,20 +90,20 @@ Bu muammoni oldini olish uchun, har bir tekshirish taxmiman teng vaqtda baralish
 
 ```javascript
 function constantTimeCompare(a, b) {
-  if (a.length !== b.length) return false;
+  if (a.length !== b.length) return false
 
-  let result = 0;
+  let result = 0
   for (let i = 0; i < a.length; i++) {
-    result |= a.charCodeAt(i) ^ b.charCodeAt(i);
+    result |= a.charCodeAt(i) ^ b.charCodeAt(i)
   }
-  return result === 0;
+  return result === 0
 }
 ```
 
 ## Dasturlashda hash qilish
 
-Hamma dasturlash tillarida *set* va *map* kolleksiyalari bor. Ularda CRUD (Create, Read, Update, Delete) amallarini bajarish O(1) vaqt oladi, deyarli bir zumda. Ular ham **hash kod** yaratish uchun `hash function`dan foydalanadi va ma'lumotni anashu hash kodda saqlaydi. Dasturlashda hash qilish haqida batafsil: [W3Schools Hash Tables](https://www.w3schools.com/dsa/dsa_theory_hashtables.php)
+Hamma dasturlash tillarida _set_ va _map_ kolleksiyalari bor. Ularda CRUD (Create, Read, Update, Delete) amallarini bajarish O(1) vaqt oladi, deyarli bir zumda. Ular ham **hash kod** yaratish uchun `hash function`dan foydalanadi va ma'lumotni anashu hash kodda saqlaydi. Dasturlashda hash qilish haqida batafsil: [W3Schools Hash Tables](https://www.w3schools.com/dsa/dsa_theory_hashtables.php)
 
-![Gatsby Toast](https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/gatsby-toast.gif?w=478&h=200)
+<img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/gatsby-toast.gif" alt="Gatsby Toast" width="478" height="200">
 
 Hozircha menda shular. **Rate limits** bilan brute force hujumlariga qarshi himoyalanishni unutmang.
