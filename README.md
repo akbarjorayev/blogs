@@ -3,7 +3,8 @@
 <div align="center">
 
 | Title                                                                         | Date         |
-|-------------------------------------------------------------------------------|--------------|
+| ----------------------------------------------------------------------------- | ------------ |
+| [2025 Recap](https://akbarswe.uz/blog/2025-recap)                             | Dec 31, 2025 |
 | [Hashing](https://akbarswe.uz/blog/hashing)                                   | May 3, 2025  |
 | [WebSocket vs Socket.IO](https://akbarswe.uz/blog/websocket-vs-socket-io)     | Mar 30, 2025 |
 | [Create React App is Dead](https://akbarswe.uz/blog/create-react-app-is-dead) | Feb 25, 2025 |
