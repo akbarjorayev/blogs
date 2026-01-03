@@ -7,9 +7,9 @@ I'm always curious about how things work under the hood. Whether it's crafting c
 My journey into **software engineering** started in early 2022, when I first wrote my `Hello World` in HTML. That small step turned into a passion for building, breaking, and learning.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/about-me/assets/akbar's-telegram.dark.webp">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/about-me/assets/akbar's-telegram.light.webp">
-  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/about-me/assets/akbar's-telegram.light.webp" alt="Akbar's Telegram Channel" width="286" height="500">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/about-me/assets/akbar-telegram-dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/about-me/assets/akbar-telegram-light.webp">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/about-me/assets/akbar-telegram-light.webp" alt="Akbar's Telegram Channel" width="286" height="500">
 </picture>
 
 Join my [Telegram channel](https://t.me/akbarswe) for updates, tips, and random tech thoughts — and feel free to share yours in the chat.
