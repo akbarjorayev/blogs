@@ -1,8 +1,13 @@
 ---
-title="WebSocket vs Socket.IO"
-published="Mar 30, 2025"
-wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/blog-wallpaper.light.webp"
+title: 'WebSocket vs Socket.IO'
+published: 'Mar 30, 2025'
 ---
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/blog-wallpaper-dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/blog-wallpaper-light.webp">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/blog-wallpaper-light.webp" alt="WebSocket vs Socket.IO thumbnail" width="500" height="300">
+</picture>
 
 Why do we need them? Both technologies connect the client and server and provide real-time communication. For example, they are essential for chat apps, multiplayer games, and other scenarios where real-time interaction between the client and server is crucial.
 

@@ -1,8 +1,13 @@
 ---
-title="2025 Sarhisobi"
-published="Dek 31, 2025"
-wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/2025-recap/assets/blog-wallpaper.webp"
+title: '2025 Sarhisobi'
+published: 'Dek 31, 2025'
 ---
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/2025-recap/assets/blog-thumbnail-dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/2025-recap/assets/blog-thumbnail-light.webp">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/2025-recap/assets/blog-thumbnail-light.webp" alt="2025 Sarhisobi muqovasi" width="1248" height="832">
+</picture>
 
 ## Ta'lim
 

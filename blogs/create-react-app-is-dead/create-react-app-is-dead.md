@@ -1,8 +1,13 @@
 ---
-title="Create React App is Dead"
-published="Feb 25, 2025"
-wallpaper="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/assets/blog-wallpaper.light.webp"
+title: 'Create React App is Dead'
+published: 'Feb 25, 2025'
 ---
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/assets/blog-wallpaper-dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/assets/blog-wallpaper-light.webp">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/assets/blog-wallpaper-light.webp" alt="Create React App is Dead thumbnail" width="500" height="300">
+</picture>
 
 Yes, [Create React App (CRA)](https://react.dev/blog/2025/02/14/sunsetting-create-react-app) is officially dead.
 
