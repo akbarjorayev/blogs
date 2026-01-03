@@ -1,6 +1,7 @@
 ---
 title: '2025 Recap'
 published: 'Dec 31, 2025'
+thumbnail: 'https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/2025-recap/assets/blog-thumbnail-light.webp'
 ---
 
 <picture>

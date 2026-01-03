@@ -1,6 +1,7 @@
 ---
 title: 'Create React App is Dead'
 published: 'Feb 25, 2025'
+thumbnail: 'https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/assets/blog-wallpaper-light.webp'
 ---
 
 <picture>

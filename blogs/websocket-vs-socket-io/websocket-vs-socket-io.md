@@ -1,6 +1,7 @@
 ---
 title: 'WebSocket vs Socket.IO'
 published: 'Mar 30, 2025'
+thumbnail: 'https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/blog-wallpaper-light.webp'
 ---
 
 <picture>

@@ -1,6 +1,7 @@
 ---
 title: 'Hash qilish'
 published: 'May 3, 2025'
+thumbnail: 'https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/hashing/assets/blog-wallpaper-light.webp'
 ---
 
 <picture>
