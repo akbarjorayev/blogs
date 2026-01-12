@@ -11,7 +11,7 @@ My journey into **software engineering** started in early 2022, when I first wro
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/about-me/assets/akbar-telegram-dark.webp">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/about-me/assets/akbar-telegram-light.webp">
-  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/about-me/assets/akbar-telegram-light.webp" alt="Akbar's Telegram Channel" width="286" height="500">
+  <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/about-me/assets/akbar-telegram-light.webp" alt="Akbar's Telegram Channel" width="850" height="1714">
 </picture>
 
 Join my [Telegram channel](https://t.me/akbarswe) for updates, tips, and random tech thoughts — and feel free to share yours in the chat.
