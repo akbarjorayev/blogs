@@ -1,7 +1,7 @@
 ---
 title: 'How Live Streaming Works?'
 published: 'Coming soon'
-wallpaper: 'https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/how-live-streaming-works/assets/blog-wallpaper.light.webp'
+wallpaper: 'https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/how-live-streaming-works/assets/blog-wallpaper-light.webp'
 ---
 
 ## Input
