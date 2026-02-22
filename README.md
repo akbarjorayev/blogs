@@ -1,5 +1,5 @@
 <h1 align="center"><strong>Akbar's log</strong></h1>
-w
+
 <div align="center">
 
 | Title                                                                          | Date         |
