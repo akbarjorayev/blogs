@@ -1,12 +1,13 @@
 <h1 align="center"><strong>Akbar's log</strong></h1>
-
+w
 <div align="center">
 
-| Title                                                                         | Date         |
-| ----------------------------------------------------------------------------- | ------------ |
-| [2025 Recap](https://akbarswe.uz/blog/2025-recap)                             | Dec 31, 2025 |
-| [Hashing](https://akbarswe.uz/blog/hashing)                                   | May 3, 2025  |
-| [WebSocket vs Socket.IO](https://akbarswe.uz/blog/websocket-vs-socket-io)     | Mar 30, 2025 |
-| [Create React App is Dead](https://akbarswe.uz/blog/create-react-app-is-dead) | Feb 25, 2025 |
+| Title                                                                          | Date         |
+| ------------------------------------------------------------------------------ | ------------ |
+| [How Live Streaming Works?](https://akbarswe.uz/blog/how-live-streaming-works) | Feb 22, 2026 |
+| [2025 Recap](https://akbarswe.uz/blog/2025-recap)                              | Dec 31, 2025 |
+| [Hashing](https://akbarswe.uz/blog/hashing)                                    | May 3, 2025  |
+| [WebSocket vs Socket.IO](https://akbarswe.uz/blog/websocket-vs-socket-io)      | Mar 30, 2025 |
+| [Create React App is Dead](https://akbarswe.uz/blog/create-react-app-is-dead)  | Feb 25, 2025 |
 
 </div>
