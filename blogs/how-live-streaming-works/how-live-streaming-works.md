@@ -12,7 +12,7 @@ wallpaper: 'https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main
 
 ## Input
 
-It all starts with a camera or microphone capturing raw video and audio. These are the _inputs_ of a live stream. But raw media is huge, and if it's 4k video, you would probably need NASA-speed internet. That's where our hero, **compression**, comes in.
+It all starts with a camera capturing raw video. That is the _input_ of a live stream. But raw media is huge, and if it's 4k video, you would probably need NASA-speed internet. That's where our hero, **compression**, comes in.
 
 ## Compression
 
@@ -30,7 +30,7 @@ CDNs (Content Delivery Networks) cache and distribute content across geographica
   <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/how-live-streaming-works/assets/cdn-light.webp" alt="CDNs (Content Delivery Networks)" width="1472" height="704">
 </picture>
 
-## Protocol
+## Protocols
 
 ### UDP
 
@@ -53,4 +53,4 @@ RTP (Real-time Transport Protocol) works on top of UDP and adds metadata like ti
 
 Live streams are never truly "live" due to the steps we discussed earlier. The time it takes for the media to be captured, compressed, sent to the CDN, and delivered to the user is called **latency**. For most live streams, latency is around 10 seconds.
 
-However, with advancements in technology and protocols like WebRTC, we can achieve ultra-low latency of under 1 second, because WebRTC doesn't really use servers, it's peer-to-peer. That means the media is sent directly from the broadcaster to the viewer without going through a CDN, which significantly reduces latency.
+However, with WebRTC we can achieve ultra-low latency of under 1 second, because WebRTC doesn't rely on servers, it's peer-to-peer. That means the media is sent directly from the broadcaster to the viewer without going through servers, which significantly reduces latency.
