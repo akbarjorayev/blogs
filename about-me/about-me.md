@@ -4,7 +4,7 @@ I'm always curious about how things work under the hood. Whether it's crafting c
 
 I'm curious by nature. I like asking "why?" and then going one layer deeper than necessary. Sometimes that leads to cool ideas. Sometimes it leads to chaos. Either way, I enjoy the process.
 
-<img src="https://firebasestorage.googleapis.com/v0/b/akbarswe.firebasestorage.app/o/og%2Fog.webp?alt=media" alt="It's me Akbar Jorayev" width="1024" height="1365">
+<img src="https://akbarswe.uz/assets/imgs/og.webp" alt="It's me Akbar Jorayev" width="1024" height="1365">
 
 My journey into **software engineering** started in early 2022, when I first wrote my `Hello World` in HTML. That small step turned into a passion for building, breaking, and learning.
 
