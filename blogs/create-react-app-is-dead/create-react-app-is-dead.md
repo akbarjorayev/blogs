@@ -1,7 +1,6 @@
 ---
 title: 'Create React App is Dead'
 published: 'Feb 25, 2025'
-thumbnail: 'https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/assets/blog-thumbnail-light.webp'
 ---
 
 <picture>
@@ -33,7 +32,7 @@ If you're looking for a replacement, here are two of the best options:
 
 ### 1. [Vite](https://vite.dev/)
 
-Vite is a high-performance frontend build tool that dramatically improves speed over CRA. It provides instant Hot Module Replacement (HMR), modern ES module support, and near-zero startup time. However, it’s purely a frontend tool and does not include server-side rendering or API handling.
+Vite is a high-performance frontend build tool that dramatically improves speed over CRA. It provides instant Hot Module Replacement (HMR), modern ES module support, and near-zero startup time. However, it's purely a frontend tool and does not include server-side rendering or API handling.
 
 ### 2. [Next.js](https://nextjs.org/)
 

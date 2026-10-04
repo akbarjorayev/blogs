@@ -1,7 +1,6 @@
 ---
 title: 'Create React App vafot etdi'
 published: 'Fev 25, 2025'
-thumbnail: 'https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/create-react-app-is-dead/assets/blog-thumbnail-light.webp'
 ---
 
 <picture>

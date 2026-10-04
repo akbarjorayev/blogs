@@ -1,7 +1,6 @@
 ---
 title: 'WebSocket vs Socket.IO'
 published: 'Mar 30, 2025'
-thumbnail: 'https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/blog-thumbnail-light.webp'
 ---
 
 <picture>
@@ -10,7 +9,7 @@ thumbnail: 'https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main
   <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/websocket-vs-socket-io/assets/blog-thumbnail-light.webp" alt="WebSocket vs Socket.IO thumbnail" width="500" height="300">
 </picture>
 
-Why do we need them? Both technologies connect the client and server and provide real-time communication. For example, they are essential for chat apps, multiplayer games, and other scenarios where real-time interaction between the client and server is crucial.
+Why do we need WebSocket and Socket.IO? Both technologies connect the client and server and provide real-time communication. For example, they are essential for chat apps, multiplayer games, and other scenarios where real-time interaction between the client and server is crucial.
 
 We can achieve "real-time" communication by repeatedly sending HTTP requests at short intervals, but this approach is costly and inefficient for large applications.
 
@@ -36,19 +35,19 @@ Socket.IO is a JavaScript library that uses WebSocket when available to establis
 
 ## Which is which?
 
-The actual purpose of both technologies is the same - they enable real-time communication between the client and server. **Then which is which?**
+The actual purpose of both technologies is the same — they enable real-time communication between the client and server. **Then which is which?**
 
 ### Connection
 
-Both send periodic heartbeats. The server sends "ping" to the client (or vice versa), and if "pong" is not received, the connection is considered dead. When the connection is lost between the client and server due to a network issue or other reasons and there is no pong for the ping, Socket.IO automatically tries to reconnect the communication. With WebSocket, we must handle reconnections manually.
+Both send periodic heartbeats. The server sends "ping" to the client (or vice versa), and if "pong" is not received, the connection is considered dead. If the connection between the client and server is lost because of a network issue or another reason and no pong arrives for the ping, Socket.IO automatically tries to reconnect. With WebSocket, we must handle reconnections manually.
 
 ### Fallbacks
 
-WebSocket is a protocol that operates over TCP, while Socket.IO has something called fallback mechanism which ensures that Socket.IO uses WebSocket when available and automatically switches to long polling when it is not. Long polling occurs when the client makes a request, and once it receives a response, it immediately sends another request to keep the connection alive.
+WebSocket is a protocol that operates over TCP, while Socket.IO has something called a fallback mechanism, which ensures that Socket.IO uses WebSocket when available and automatically switches to long polling when it is not. Long polling occurs when the client makes a request, and once it receives a response, it immediately sends another request to keep the connection alive.
 
 ### Broadcasting
 
-It is another built-in method in Socket.IO. In Socket.IO, we can send messages to as many clients as we want or send them to a specific room. A room is like a group chat. Meanwhile, WebSocket requires manual implementation.
+It is another built-in feature of Socket.IO. In Socket.IO, we can send messages to as many clients as we want or send them to a specific room. A room is like a group chat. Meanwhile, WebSocket requires manual implementation.
 
 ### Event-based communication
 
@@ -57,36 +56,38 @@ WebSocket is a raw bidirectional connection that allows message exchange. Meanwh
 Server (Node.js)
 
 ```javascript
-const { Server } = require('socket.io');
-const io = new Server(3000);
+const { Server } = require('socket.io')
+const io = new Server(3000)
 
 io.on('connection', (socket) => {
-    socket.on('custom_event', (data) => socket.emit('response_event', 'Hello from server!'));
-});
+  socket.on('custom_event', (data) =>
+    socket.emit('response_event', 'Hello from server!'),
+  )
+})
 ```
 
 Client (Browser)
 
 ```javascript
-const socket = io('http://localhost:3000');
+const socket = io('http://localhost:3000')
 
-socket.emit('custom_event', 'Hello from client!');
-socket.on('response_event', (data) => console.log(data));
+socket.emit('custom_event', 'Hello from client!')
+socket.on('response_event', (data) => console.log(data))
 ```
 
 ### Performance
 
-Because WebSocket is an application-layer protocol connection, it has lower latency than Socket.IO, which includes built-in methods like event-based communication. When Socket.IO sends a message, it adds additional metadata (e.g., event and data itself).
+Because WebSocket is a thin layer over TCP, it has lower latency than Socket.IO, which includes built-in features like event-based communication. When Socket.IO sends a message, it wraps it in additional metadata (e.g., the event name and the data itself).
 
 ```javascript
 { "event": "custom_event", "data": "Hello" }
 ```
 
-## When to which?
+## When to use which?
 
-1. Choose **Socket.IO** if you want to simplify development with more built-in methods while sacrificing a small fraction of time waiting for clients (e.g., chat apps, collaborative tools).
-2. Choose **WebSocket** if you want complete freedom over development, to build everything from scratch, and need high performance with low latency (e.g., trading platforms, gaming servers).
+1. Choose **Socket.IO** if you want to simplify development with more built-in features and can accept a small overhead (e.g., chat apps, collaborative tools).
+2. Choose **WebSocket** if you want complete freedom over development, are happy to build everything from scratch, and need high performance with low latency (e.g., trading platforms, gaming servers).
 
-## Own experience
+## My experience
 
-I worked with Socket.IO on my project [Temprora](https://github.com/temprora), feel free to check it out and contribute.
+I worked with Socket.IO on my project [Temprora](https://github.com/temprora). Feel free to check it out and contribute.

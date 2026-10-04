@@ -1,7 +1,6 @@
 ---
 title: '2025 Recap'
 published: 'Dec 31, 2025'
-thumbnail: 'https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/2025-recap/assets/blog-thumbnail-light.webp'
 ---
 
 <picture>
@@ -12,11 +11,11 @@ thumbnail: 'https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main
 
 ## Education & Learning
 
-2025 started with university exams as a freshman, I took my first semester's final exams and passed ✅, but it was only the beginning of the whole year.
+2025 started with university exams. As a freshman, I took my first semester's final exams and passed ✅, but it was only the beginning of the whole year.
 
-Right after that, after the conversation with [Azimjon](https://t.me/Azimjon_Nazarov) (Java backend engineer), I started learning backend development. That was enjoyable, understanding how to create secure and scale backend infrastructures, which I only used the API to interact with.
+Right after the conversation with [Azimjon](https://t.me/Azimjon_Nazarov) (Java backend engineer), I started learning backend development. That was enjoyable, understanding how to create secure and scalable backend infrastructures.
 
-In addition, I want to share some exciting news. After a long journey of learning and improving, sometimes even declining in my English. I got my IELTS 7 certificate. It certainly wasn't easy, and it took time, but eventually I nailed it!
+In addition, I want to share some exciting news. After a long journey of learning and improving, sometimes even declining in my English, I got my IELTS 7 certificate. It certainly wasn't easy, and it took time, but eventually I nailed it!
 
 Studying at Everest for 5 months and completing Cambridge 10–16 was extremely helpful; I definitely recommend it. Interestingly, I scored 6 on a mock exam right before the real test, but fortunately, the actual exam was different.
 
@@ -28,7 +27,7 @@ Studying at Everest for 5 months and completing Cambridge 10–16 was extremely 
 
 ## Activities & Projects
 
-Even though I launched my [telegram channel](https://t.me/akbarswe) in late 2024, I started "actively" posting things in 2025. Besides this, I started writing [blogs](/blog) here, so far I wrote three blogs about tech, and I believe that is only the beginning. There's so much more to share.
+Even though I launched my [Telegram channel](https://t.me/akbarswe) in late 2024, I started "actively" posting things in 2025. Besides this, I started writing [blog posts](/blog) here. So far I have written three about tech, and I believe that is only the beginning. There's so much more to share.
 
 Writing blogs is not easy; you need to find a topic that is harder than writing a blog itself, then learn about it, and then it's time to write.
 
@@ -38,9 +37,9 @@ Writing blogs is not easy; you need to find a topic that is harder than writing 
   <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/2025-recap/assets/akbar-blog-light.webp" alt="Akbar's blog" width="500" height="300">
 </picture>
 
-In 2025, I created seven MVP projects and guess what... I deleted five of them. You can find the codebase for the deleted ones on [archived GitHub](https://github.com/akbar-archive). I know it's hard to delete the projects that took weeks, some even months, to build and publish. But I am happy to try and recreate them by myself, I learnt a lot from them.
+In 2025, I created seven MVP projects and guess what... I deleted five of them. You can find the code for the deleted ones in my [GitHub archive](https://github.com/akbar-archive). I know it's hard to delete projects that took weeks, some even months, to build and publish. But I am happy to try and recreate them on my own. I learned a lot from them.
 
-I gained real-world experience by working on my projects. I built everything from scratch, including the backend, frontend, and deployment. It was challenging but rewarding; more things were learned this way, which I will share in the future on blogs.
+I gained real-world experience by working on my projects. I built everything from scratch, including the backend, frontend, and deployment. It was challenging but rewarding; I learned a lot this way, and I will share more in future blog posts.
 
 By the way, I had big dreams, and that's why I bought four .uz domains in 2025. But now I have no idea what to do with them 😅 Do you think I should keep them?
 
@@ -56,9 +55,9 @@ Useful links: [CV](/cv) | [LinkedIn](https://www.linkedin.com/in/akbarjorayev) |
 
 ## Hackathons & Competitions
 
-This year, I participated in my first hackathon ever, **INNOVATIVE AI HACKATHON 2025** at School 21. I joined the **AUTerian team** as an imposter; out of four participants, only I was from TUIT, the others were from AUT. It was delightful, I met new people, I felt what it's like to be at a hackathon, and of course, solved a problem.
+This year, I participated in my first hackathon ever, **INNOVATIVE AI HACKATHON 2025** at School 21. I joined the **AUTerian team** as an imposter; out of four participants, only I was from TUIT, the others were from AUT. It was delightful: I met new people, felt what it's like to be at a hackathon, and, of course, solved a problem.
 
-We made a clean area bot, which tells government officials where trash is. Learn more about it on [telegram bot](https://t.me/cleanarea_bot), it is working so far, but I don't guarantee that it won't be deleted 😅
+We made a clean area bot, which tells government officials where the trash is. Learn more about it on the [Telegram bot](https://t.me/cleanarea_bot). It is working so far, but I can't promise I won't delete it 😅
 
 <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/main/blogs/2025-recap/assets/innovative-ai-hackathon.webp" alt="Innovative AI hackathon 2025" width="3360" height="2240">
 
