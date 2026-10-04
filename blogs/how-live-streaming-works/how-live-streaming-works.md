@@ -1,7 +1,6 @@
 ---
 title: 'How Live Streaming Works?'
 published: 'Feb 22, 2026'
-wallpaper: 'https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/how-live-streaming-works/assets/blog-thumbnail.webp'
 ---
 
 <picture>
@@ -12,11 +11,11 @@ wallpaper: 'https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main
 
 ## Input
 
-It all starts with a camera capturing raw video. That is the _input_ of a live stream. But raw media is huge, and if it's 4k video, you would probably need NASA-speed internet. That's where our hero, **compression**, comes in.
+It all starts with a camera capturing raw video. That is the _input_ of a live stream. But raw media is huge, and if it's 4K video, you would probably need NASA-speed internet. That's where our hero, **compression**, comes in.
 
 ## Compression
 
-A codec compresses the video so it can travel more efficiently through servers. Imagine a sped-up sunrise video, where only the sun's position changes throughout the stream. Compression tells the system, 'hey, only render what changed.'
+A codec compresses the video so it can travel more efficiently through servers. Imagine a sped-up sunrise video, where only the sun's position changes throughout the stream. Compression tells the system, "hey, only render what changed."
 
 Videos are not sent as a single MP4 file. Instead, they are encoded using H.265 (HEVC) or H.264 (AVC) and split into small chunks that are delivered to CDNs. A chunk is a part of a video, maybe 2 seconds of the live stream. That is exactly why, even if your internet lags or completely turns off, you will still see 2–3 seconds of the live stream, because that chunk is already loaded.
 
@@ -34,14 +33,14 @@ CDNs (Content Delivery Networks) cache and distribute content across geographica
 
 ### UDP
 
-UDP (User Datagram Protocol) is used to send messages and packets over the internet. As I said, we send the media in chunks, and for live streaming, we don't actually need every single chunk. What we really need is **delivering media** to users. UDP sends chunks even if some are lost.
+UDP (User Datagram Protocol) is used to send messages and packets over the internet, and many real-time streaming protocols are built on top of it. For live streaming, we don't actually need every single packet. What we really need is **delivering media** to users quickly. UDP keeps sending even if some packets are lost.
 
 ```txt
-chunk1
-chunk2
-chunk3
+packet1
+packet2
+packet3
 MISSING
-chunk5
+packet5
 ...
 ```
 
@@ -53,4 +52,4 @@ RTP (Real-time Transport Protocol) works on top of UDP and adds metadata like ti
 
 Live streams are never truly "live" due to the steps we discussed earlier. The time it takes for the media to be captured, compressed, sent to the CDN, and delivered to the user is called **latency**. For most live streams, latency is around 10 seconds.
 
-However, with WebRTC we can achieve ultra-low latency of under 1 second, because WebRTC doesn't rely on servers, it's peer-to-peer. That means the media is sent directly from the broadcaster to the viewer without going through servers, which significantly reduces latency.
+However, with WebRTC we can achieve ultra-low latency of under 1 second, because WebRTC is peer-to-peer: the media is sent directly from the broadcaster to the viewer without going through a media server, which significantly reduces latency. (Servers are still used for signaling, and sometimes as a fallback relay.)

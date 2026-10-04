@@ -1,7 +1,6 @@
 ---
 title: 'Jonli efir qanday ishlaydi?'
 published: 'Fev 22, 2026'
-wallpaper: 'https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/blogs/how-live-streaming-works/assets/blog-thumbnail.webp'
 ---
 
 <picture>
