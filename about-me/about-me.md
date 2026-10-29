@@ -12,7 +12,7 @@ My journey into **software engineering** started in early 2022, when I first wro
 
 <img src="https://raw.githubusercontent.com/akbarjorayev/blogs/refs/heads/main/about-me/assets/icpc-2025.webp" alt="Me at ICPC 2025" width="4000" height="2252">
 
-Since then I've built things from scratch: backend, frontend, and deployment, and I've learned the most from the ones that failed. In 2025 I made several MVPs and deleted most of them. The code is still on [GitHub Archive](https://github.com/akbar-archive) if you're curious. You can see what I built in the [projects](/projects) section.
+Since then I've built things from scratch: backend, frontend, and deployment, and I've learned the most from the ones that failed. In 2025 I made several MVPs and deleted most of them. The code is still on [GitHub Archive](https://github.com/akbar-archive) if you're curious. You can see what I built in the [projects](/project) section.
 
 I also got into competitive programming. In 2025 my team placed 28th place (it was 27th before the final decision) out of 157 at ICPC Uzbekistan.
 
